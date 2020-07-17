@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Евгений Карпов](https://up.htmlacademy.ru/adaptive/20/user/1490261).
-* Наставник: `Неизвестно`.
+* Наставник: [Марина Удовенко](https://up.htmlacademy.ru/adaptive/20/user/7570).
 
 ---
 
