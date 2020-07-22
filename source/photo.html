@@ -141,10 +141,34 @@
             </li>
           </ul>
         </section>
-        <p>
-          Затмите их всех!
-          Выкладывайте все, что накопилось в телефоне!
-        </p>
+        <section class="block-loading">
+          <h3 class="block-loading__heading">
+            Затмите их всех!
+            Выкладывайте все, что накопилось в телефоне!
+          </h3>
+          <figure class="block-loading__photo">
+            <img src="https://via.placeholder.com/150x150" alt="*">
+          </figure>
+          <form class="block-loading__form-loading" action="https://echo.htmlacademy.ru" method="get">
+            <ul class="block-loading__list">
+              <li class="block-loading__item">
+                <input class="visually-hidden" type="radio" id="pruning" name="filters">
+                <label for="pruning"></label>
+              </li>
+              <li class="block-loading__item">
+                <input class="visually-hidden" type="radio" id="shade" name="filters">
+                <label for="shade"></label>
+              </li>
+              <li class="block-loading__item">
+                <input class="visually-hidden" type="radio" id="contrast" name="filters">
+                <label for="contrast"></label>
+              </li>
+            </ul>
+            <div></div>
+            <button class="block-loading__button-submit" type="submit">Запостить</button>
+            <button class="block-loading__button-reset" type="reset">Отмена</button>
+          </form>
+        </section>
       </div>
     </main>
     <footer class="page-footer">
