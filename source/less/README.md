@@ -1,6 +1,6 @@
 Папка для файлов препроцессора Less.
 
-http://lesscss.org
+http://lesscss.org/
 
 --
 
