@@ -54,3 +54,15 @@
   @include form__heading;
   color: $link-more-color;
 }
+
+.form__button-submit {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $basic-color;
+  background-color: $form-button-color;
+  border-radius: 1px;
+
+  border: none;
+}
