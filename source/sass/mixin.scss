@@ -1,0 +1,25 @@
+@mixin name-input {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $link-more-color;
+  text-transform: uppercase;
+}
+
+@mixin form__heading {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $basic-additional-color;
+}
+
+@mixin descriptions-photo {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@mixin how-is-like {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}

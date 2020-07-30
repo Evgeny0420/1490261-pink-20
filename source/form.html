@@ -4,35 +4,35 @@
     <meta charset="UTF-8">
     <title>Pink</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__block-logo">
-        <a class="page-header__logo">
-          <img src="https://via.placeholder.com/150x150" alt="pink-logotype">
+      <div class="shell-logo">
+        <a class="shell-logo__logo">
         </a>
-        <button class="page-header__button-logo" type="button"></button>
+        <button class="shell-logo__button" type="button"></button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фотографии</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link">Конкурс</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Конкурс</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/">Html academy</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/">Html academy</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
       <div class="title-head">
-        <h1 class="title-head__heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h2 class="title-head__heading">Конкурс на самое безбашенное путешествие с Пинк</h2>
       </div>
       <section class="form">
         <form class="form__shell" action="https://echo.htmlacademy.ru" method="get">
@@ -44,20 +44,20 @@
           <fieldset class="form__fieldset">
             <ul class="form__list">
               <li class="form__item">
-                <label class="form__name-input" for="surname">Фамилия</label>
+                <label class="form__name-input" for="surname">Фамилия:</label>
                 <input class="form__write" type="text" id="surname" name="surname" placeholder="Укажите фамилию *">
               </li>
               <li class="form__item">
-                <label class="form__name-input" for="name">Имя</label>
+                <label class="form__name-input" for="name">Имя:</label>
                 <input class="form__write" type="text" id="name" name="name" placeholder="Введите ваше имя *">
               </li>
               <li class="form__item">
-                <label class="form__name-input" for="patronymic">Отчетсво</label>
+                <label class="form__name-input" for="patronymic">Отчетсво:</label>
                 <input class="form__write" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset-radio-check">
             <legend class="form__name-input" >Ваши безбашенные
               достижения в путешествии</legend>
             <ul class="form__list">
@@ -99,8 +99,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__name-input">
+          <fieldset class="form__fieldset form__fieldset-radio-check"">
+            <legend class="form__name-check-radio">
               С каким приложением
               путешествовали?
             </legend>
@@ -121,7 +121,7 @@
           </fieldset>
           <fieldset class="form__fieldset">
             <label class="form__name-input" for="text-mail">Опишите свои эмоции</label>
-            <textarea class="form__write" id="text-mail" name="text-mail" placeholder="Можно прям в красках, не
+            <textarea class="form__write form__write--resize" id="text-mail" name="text-mail" placeholder="Можно прям в красках, не
     стесняясь в выражениях"></textarea>
           </fieldset>
           <button class="form__button-submit" type="submit">Отправить форму</button>
@@ -131,12 +131,11 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__logotype">
-        <img src="https://via.placeholder.com/150x150" alt="logotype pink">
+        <img src="https://via.placeholder.com/150x150" alt="logotype-pink">
       </div>
       <ul class="page-footer__social-list">
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#">
-          </a>
+          <a class="page-footer__social-link" href="#"></a>
         </li>
         <li class="page-footer__social-item">
           <a class="page-footer__social-link" href="#"></a>
@@ -147,7 +146,6 @@
       </ul>
       <a class="page-footer__author" href="https://htmlacademy.ru/">
         Разработано
-        <img src="https://via.placeholder.com/150x150" alt="html academy">
       </a>
     </footer>
   </body>

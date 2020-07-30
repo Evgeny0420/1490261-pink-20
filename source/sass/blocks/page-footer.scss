@@ -1,0 +1,15 @@
+.page-footer {
+  background-color: $basic-color;
+}
+
+.page-footer__social-item {
+  list-style-type: none;
+}
+
+.page-footer__author {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $basic-additional-color;
+  text-decoration: none;
+}
