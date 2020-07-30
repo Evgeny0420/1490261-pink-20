@@ -35,14 +35,15 @@
 }
 
 .form__write {
-  border: 2px solid $body-color;
-  border-radius: 1px;
-  &::-webkit-input-placeholder {
-    color: $basic-additional-color;
-  }
   &--resize {
     resize: none;
   }
+
+  &::-webkit-input-placeholder {
+    color: $basic-additional-color;
+  }
+  border: 2px solid $body-color;
+  border-radius: 1px;
 }
 
 .form__information {

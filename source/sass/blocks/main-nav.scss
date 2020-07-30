@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
 }
+
 .main-nav__link {
   font-size: 18px;
   line-height: 32px;
@@ -14,5 +15,5 @@
 .main-nav__item {
   list-style-type: none;
   background-color: $basic-additional-color;
-  box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 1px 0 $basic-color, inset 0 1px 0 rgba($basic-color, 0.15);
 }

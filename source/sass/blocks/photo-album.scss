@@ -7,8 +7,8 @@
 }
 
 .photo-album__description {
-  background-color: $basic-other-color;
   @include descriptions-photo;
+  background-color: $basic-other-color;
 }
 
 .photo-album__name-author {
