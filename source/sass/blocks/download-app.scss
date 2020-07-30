@@ -1,4 +1,4 @@
-.download-app__images {
+.download-app {
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-color: $basic-additional-color;
   background-repeat: no-repeat;
@@ -9,7 +9,7 @@
   margin: 0;
   font-weight: 300;
   font-size: 24px;
-  line-height: 120%;
+  line-height: 29px;
   color: $basic-color;
 }
 
@@ -17,6 +17,18 @@
   background-color: $mobile-background-color;
 }
 
+.download-app__logo-list {
+  margin: 0;
+}
+
 .download-app__logo-item {
   list-style-type: none;
+}
+
+.download-app__about {
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: $basic-color;
 }

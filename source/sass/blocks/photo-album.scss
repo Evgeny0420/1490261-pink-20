@@ -1,0 +1,36 @@
+.photo-album {
+  background-color: $basic-color;
+}
+
+.photo-album__heading {
+  @include form__heading;
+}
+
+.photo-album__description {
+  background-color: $basic-other-color;
+  @include descriptions-photo;
+}
+
+.photo-album__name-author {
+  font-weight: bold;
+}
+
+.time-post {
+  @include how-is-like;
+  font-weight: 300;
+}
+
+.photo-album__about {
+  font-weight: normal;
+}
+
+.how-is-like {
+  @include how-is-like;
+  font-weight: normal;
+  color: $link-more-color;
+}
+
+.photo-album__list {
+  padding: 0;
+  list-style-type: none;
+}

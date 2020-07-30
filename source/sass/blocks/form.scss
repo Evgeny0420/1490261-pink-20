@@ -1,0 +1,56 @@
+.form {
+  background-color: $basic-color;
+}
+
+.form__heading {
+  @include form__heading;
+}
+
+.form__fieldset {
+  border: 0 none;
+}
+
+.form__fieldset-radio-check {
+  background-color: $basic-other-color;
+}
+
+.form__item {
+  list-style-type: none;
+}
+
+.form__name-input {
+  @include name-input;
+}
+
+.form__name-check-radio {
+  @include name-input;
+  line-height: 18px;
+}
+
+.form__heading-radio-check,
+.form__write {
+  @include name-input;
+  text-transform: none;
+  color: $basic-additional-color;
+}
+
+.form__write {
+  border: 2px solid $body-color;
+  border-radius: 1px;
+  &::-webkit-input-placeholder {
+    color: $basic-additional-color;
+  }
+  &--resize {
+    resize: none;
+  }
+}
+
+.form__information {
+  @include form__heading;
+  text-transform: uppercase;
+}
+
+.form__information-asterisk {
+  @include form__heading;
+  color: $link-more-color;
+}
