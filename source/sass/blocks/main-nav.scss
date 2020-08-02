@@ -1,4 +1,10 @@
+.main-nav--disabled {
+  display: flex;
+}
+
 .main-nav__list {
+  display: none;
+  flex-direction: column;
   padding: 0;
   margin: 0;
 }
@@ -13,7 +19,15 @@
 }
 
 .main-nav__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 63px;
+  padding: 10px;
   list-style-type: none;
   background-color: $basic-additional-color;
-  box-shadow: 0 1px 0 $basic-color, inset 0 1px 0 rgba($basic-color, 0.15);
+  box-shadow: 0 1px 0 $basic-text-color, inset 0 1px 0 rgba($basic-color, 0.15);
+  border-bottom: 1px solid $basic-text-color;
 }
+

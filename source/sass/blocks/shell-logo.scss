@@ -1,3 +1,71 @@
 .shell-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: $basic-additional-color;
+  border-bottom: 1px solid $basic-text-color;
+  position: relative;
+  height: 69px;
+  box-sizing: border-box;
+  padding: 20px 16px;
 }
+
+.shell-logo__logo {
+  background: url("../../img/logo-pink-white-mobile.svg") no-repeat;
+  width: 74px;
+  height: 23px;
+}
+
+@media ($tablet-widths) {
+  .shell-logo {
+    height: 109px;
+  }
+  .shell-logo__logo {
+    background: url("../../img/logo-pink-white-tablet.svg") no-repeat;
+    width: 145px;
+    height: 40px;
+  }
+}
+
+@media ($desktop-widths) {
+  .shell-logo__logo {
+    background: url("../../img/logo-pink-white-desktop.svg") no-repeat;
+    width: 147px;
+    height: 40px;
+  }
+
+  .shell-logo__button {
+    display: none;
+  }
+}
+
+.shell-logo__button {
+  position: relative;
+  width: 23px;
+  height: 23px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 29px;
+    height: 3px;
+    background-color: $basic-color;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+
+
+

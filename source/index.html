@@ -3,17 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <title>Pink</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="shell-logo">
-        <a class="shell-logo__logo">
-        </a>
+        <a class="shell-logo__logo"></a>
         <button class="shell-logo__button" type="button"></button>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--disabled">
         <ul class="main-nav__list site-list">
           <li class="main-nav__item">
             <a class="main-nav__link">Главная</a>
@@ -33,28 +32,32 @@
     <main class="page-main">
       <h1 class="visually-hidden">Pink - взгляните на жизнь иначе!</h1>
       <section class="download-app">
-        <div class="download-app__images">
-          <h2 class="download-app__heading">Взгляните на жизнь иначе!</h2>
-        </div>
+        <h2 class="download-app__heading">Взгляните на жизнь иначе!</h2>
         <div class="download-app__panel">
-          <a class="link download-app__link" href="https://www.apple.com/ru/ios/app-store/">
+          <a class="download-app__link" href="https://www.apple.com/ru/ios/app-store/">
           Скачать приложение
           </a>
           <ul class="download-app__logo-list">
             <li class="download-app__logo-item">
               <a class="download-app__logo-apple" href="https://www.apple.com/ru/ios/app-store/">
+                <img src="img/logo-apple.svg" width="47" height="56" alt="Apple appStore">
               </a>
             </li>
             <li class="download-app__logo-item">
               <a class="download-app__logo-android" href="https://play.google.com/store">
+                <img src="img/logo-android.svg" width="47" height="56" alt="Google Play">
               </a>
             </li>
             <li class="download-app__logo-item">
               <a class="download-app__logo-microsoft" href="https://www.microsoft.com/ru-ru/store/apps">
+                <img src="img/logo-microsoft.svg" width="47" height="56" alt="microsoft appStore">
               </a>
             </li>
           </ul>
-          <p class="download-app__about">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <p class="download-app__about">
+            Доступно для iPhone, iPad, Android,<br>
+            Windows Phone, OS X, Windows 8
+          </p>
         </div>
       </section>
       <section class="sentence">
@@ -77,7 +80,6 @@
           </li>
         </ul>
         <div class="about-app__images">
-          <img src="https://via.placeholder.com/150x150" alt="Всем-привет">
         </div>
       </section>
       <section class="review">
@@ -91,7 +93,7 @@
             в комментариях к выложенной фотографии!»
           </p>
         </div>
-        <button class="review__button button--active" type="button"></button>
+        <button class="review__button review__button--active" type="button"></button>
         <button class="review__button" type="button"></button>
         <button class="review__button" type="button"></button>
       </section>
@@ -149,9 +151,9 @@
           </tr>
           </tbody>
         </table>
-        <button class="review__button button--active" type="button"></button>
-        <button class="review__button" type="button"></button>
-        <button class="review__button" type="button"></button>
+        <button class="price__button price__button--active" type="button"></button>
+        <button class="price__button" type="button"></button>
+        <button class="price__button" type="button"></button>
       </section>
       <section class="contacts">
         <div class="contacts__roster">
@@ -175,7 +177,7 @@
           </ul>
         </div>
         <div class="contacts__map">
-          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533207!2d30.32085871619959!3d59.938716481876256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595429881544!5m2!1sru!2sru" width="600" height="450" aria-hidden="false" tabindex="0"></iframe>
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533207!2d30.32085871619959!3d59.938716481876256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595429881544!5m2!1sru!2sru" width="100%" height="450" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </section>
     </main>

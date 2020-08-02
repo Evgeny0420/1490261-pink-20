@@ -1,12 +1,31 @@
 .about-app {
   background-color: $basic-other-color;
+  box-sizing: border-box;
+  padding: 20px 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .about-app__list {
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 
 .about-app__item {
   list-style-type: none;
+}
+
+.about-app__item__answer {
+  @include descriptions-photo;
+  width: 280px;
+}
+
+.about-app__images {
+  background-image: url("../../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  width: 157px;
+  height: 320px;
 }
