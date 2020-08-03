@@ -1,12 +1,12 @@
-.main-nav--disabled {
-  display: flex;
-}
-
 .main-nav__list {
-  display: none;
+  display: flex;
   flex-direction: column;
   padding: 0;
   margin: 0;
+}
+
+.main-nav--disabled {
+  display: none;
 }
 
 .main-nav__link {
@@ -31,3 +31,31 @@
   border-bottom: 1px solid $basic-text-color;
 }
 
+@media ($desktop-widths) {
+  .main-nav--disabled {
+    display: flex;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    left: 450px;
+  }
+
+  .main-nav__item {
+    box-sizing: border-box;
+    height: 69px;
+    padding: 10px;
+    background-color: transparent;
+    box-shadow: none;
+    border-bottom: none;
+  }
+
+  .main-nav__link {
+    line-height: 18px;
+    font-weight: normal;
+    color: $basic-color;
+    text-transform: none;
+  }
+}

@@ -7,7 +7,8 @@
     width: 320px;
     height: 286px;
     bottom: 271px;
-    left: 0;
+    left: auto;
+    right: auto;
   }
   background-image: url("../../img/bg-back-tablet@1x.jpg");
   background-position: 50% 50%;
@@ -15,7 +16,9 @@
   height: 733px;
   background-color: $basic-additional-color;
   position: relative;
+  box-sizing: border-box;
   margin: 0 auto;
+  padding: 95px 20px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -61,6 +64,7 @@
 .download-app__panel {
   background-color: $mobile-background-color;
   height: 271px;
+  min-width: 100%;
   position: absolute;
   bottom: 0;
   display: flex;
@@ -94,8 +98,12 @@
 
 @media ($tablet-widths) {
   .download-app__heading {
+    margin: 0;
+    margin-bottom: 39px;
     font-size: 40px;
     line-height: 48px;
+    width: 300px;
+    text-align: center;
   }
 
   .download-app__link {
@@ -115,22 +123,32 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     min-width: 660px;
+    padding: 212px 20px 119px;
     height: 769px;
     justify-content: center;
     align-items: start;
   }
 
   .download-app__panel {
-    align-items: start;
+    min-width: 300px;
+    height: 237px;
+    padding: 0;
+    align-items: center;
     background-color: transparent;
     position: relative;
   }
 }
 
 @media ($desktop-widths) {
+  .download-app {
+    padding: 224px 130px 130px;
+  }
+
   .download-app__heading {
+    width: 300px;
     font-size: 50px;
     line-height: 68px;
+    margin-bottom: 39px;
   }
 
   .download-app__link {
@@ -155,7 +173,9 @@
   }
 
   .download-app__panel {
-    padding: 28px 130px 38px;
+    min-width: 300px;
+    height: 288px;
+    padding: 0;
     background-color: transparent;
     position: relative;
   }

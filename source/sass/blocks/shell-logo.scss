@@ -2,12 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $basic-additional-color;
+  background-color: rgba($basic-text-color, 0.3);
   border-bottom: 1px solid $basic-text-color;
   position: relative;
   height: 69px;
   box-sizing: border-box;
   padding: 20px 16px;
+}
+
+.shell-logo--color {
+  background-color: $basic-additional-color;
 }
 
 .shell-logo__logo {
@@ -16,36 +20,22 @@
   height: 23px;
 }
 
-@media ($tablet-widths) {
-  .shell-logo {
-    height: 109px;
-  }
-  .shell-logo__logo {
-    background: url("../../img/logo-pink-white-tablet.svg") no-repeat;
-    width: 145px;
-    height: 40px;
-  }
-}
-
-@media ($desktop-widths) {
-  .shell-logo__logo {
-    background: url("../../img/logo-pink-white-desktop.svg") no-repeat;
-    width: 147px;
-    height: 40px;
-  }
-
-  .shell-logo__button {
-    display: none;
-  }
-}
-
-.shell-logo__button {
-  position: relative;
-  width: 23px;
-  height: 23px;
+.shell-logo__button-burger {
+  background-image: url("../../img/icon-menu-burger.svg");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 24px;
   background-color: transparent;
   border: 0;
   cursor: pointer;
+}
+
+.shell-logo__button-burger--none {
+  display: none;
+}
+
+
+.shell-logo__button-close {
   &::before,
   &::after {
     content: "";
@@ -64,8 +54,47 @@
   &::after {
     transform: rotate(-45deg);
   }
+  position: relative;
+  width: 23px;
+  height: 23px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
 }
 
 
+.shell-logo__button-close--none {
+  display: none;
+}
 
 
+@media ($tablet-widths) {
+  .shell-logo {
+    height: 109px;
+  }
+
+  .shell-logo__logo {
+    background-image: url("../../img/logo-pink-white-tablet.svg");
+    background-repeat: no-repeat;
+    width: 145px;
+    height: 40px;
+  }
+}
+
+@media ($desktop-widths) {
+  .shell-logo {
+    box-sizing: border-box;
+    padding: 27px 130px 43px;
+  }
+
+  .shell-logo__logo {
+    background: url("../../img/logo-pink-white-desktop.svg") no-repeat;
+    width: 147px;
+    height: 40px;
+  }
+
+  .shell-logo__button-burger,
+  .shell-logo__button-close {
+    display: none;
+  }
+}
