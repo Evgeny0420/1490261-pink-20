@@ -2,8 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba($basic-text-color, 0.3);
-  border-bottom: 1px solid $basic-text-color;
   position: relative;
   height: 69px;
   box-sizing: border-box;
@@ -12,6 +10,7 @@
 
 .shell-logo--color {
   background-color: $basic-additional-color;
+  border-bottom: 1px solid $basic-text-color;
 }
 
 .shell-logo__logo {
@@ -83,8 +82,10 @@
 
 @media ($desktop-widths) {
   .shell-logo {
-    box-sizing: border-box;
-    padding: 27px 130px 43px;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    padding: 0;
   }
 
   .shell-logo__logo {

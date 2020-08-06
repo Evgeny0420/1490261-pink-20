@@ -1,9 +1,6 @@
 .about-app {
-  background-color: $basic-other-color;
   box-sizing: border-box;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px 20px 0;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 1fr min-content;
@@ -98,24 +95,18 @@
   }
 
   .about-app__mobile-black {
+    @include about-app__mobile;
     background-image: url("../../img/iphone-screen-1-desktop@1x.png");
-    background-repeat: no-repeat;
-    width: 292px;
-    height: 302px;
   }
 
   .about-app__mobile-purple {
+    @include about-app__mobile;
     background-image: url("../../img/iphone-screen-2-desktop@1x.png");
-    background-repeat: no-repeat;
-    width: 292px;
-    height: 302px;
   }
 
   .about-app__mobile-smile {
+    @include about-app__mobile;
     background-image: url("../../img/iphone-screen-3-desktop@1x.png");
-    background-repeat: no-repeat;
-    width: 292px;
-    height: 302px;
   }
 
   .about-app__list {

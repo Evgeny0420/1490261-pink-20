@@ -23,3 +23,27 @@
   line-height: 24px;
   text-transform: uppercase;
 }
+
+@mixin photo-setting {
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 180px;
+}
+
+@mixin photo-setting-tab {
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+}
+
+@mixin photo-setting-desktop {
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 400px;
+}
+
+@mixin about-app__mobile {
+  background-repeat: no-repeat;
+  width: 292px;
+  height: 302px;
+}

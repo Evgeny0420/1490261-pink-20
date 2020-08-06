@@ -1,9 +1,9 @@
 .title-head {
   background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-color: $basic-additional-color;
   background-repeat: no-repeat;
-  min-width: 100%;
+  width: 320px;
   height: 237px;
+  margin: 0 auto;
   position: relative;
   box-sizing: border-box;
   padding: 102px 46px 51px;
@@ -28,6 +28,7 @@
     background-repeat: no-repeat;
     background-position: 50% 0;
     height: 440px;
+    width: 100%;
     padding: 191px 20px 74px;
   }
 
@@ -44,6 +45,7 @@
     background-repeat: no-repeat;
     background-position: 50% 0;
     height: 394px;
+    width: 100%;
     padding: 184px 226px 104px;
   }
 

@@ -19,13 +19,13 @@
 }
 
 .main-nav__item {
+  list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
   height: 63px;
+  box-sizing: border-box;
   padding: 10px;
-  list-style-type: none;
   background-color: $basic-additional-color;
   box-shadow: 0 1px 0 $basic-text-color, inset 0 1px 0 rgba($basic-color, 0.15);
   border-bottom: 1px solid $basic-text-color;
@@ -33,20 +33,19 @@
 
 @media ($desktop-widths) {
   .main-nav--disabled {
-    display: flex;
+    display: block;
   }
 
   .main-nav__list {
     flex-direction: row;
-    position: absolute;
-    top: 0;
-    left: 450px;
   }
 
   .main-nav__item {
     box-sizing: border-box;
-    height: 69px;
-    padding: 10px;
+    height: auto;
+    padding: 0;
+    margin-left: 79px;
+    margin-top: 12px;
     background-color: transparent;
     box-shadow: none;
     border-bottom: none;
