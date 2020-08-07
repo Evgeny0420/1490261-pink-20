@@ -1,0 +1,13 @@
+.container {
+  width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media ($tablet-widths) {
+    width: 660px;
+  }
+
+  @media ($desktop-widths) {
+    width: 1200px;
+  }
+}

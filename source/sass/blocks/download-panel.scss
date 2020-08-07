@@ -1,0 +1,95 @@
+.download-panel {
+  background-color: $mobile-background-color;
+  height: 271px;
+}
+
+.download-panel__shell {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 28px 20px 38px;
+}
+
+.download-panel__link {
+  &:hover {
+    background-color: $basic-color;
+    color: $link-more-color;
+  }
+
+  &:active,
+  &:focus {
+    color: rgba($link-more-color, 0.3);
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+  color: $basic-color;
+  box-sizing: border-box;
+  width: 280px;
+  min-height: 55px;
+  padding: 12px 35px;
+  border: 3px solid $basic-color;
+  border-radius: 29px;
+}
+
+.download-panel__logo-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.download-panel__logo-item {
+  margin: 18px;
+  list-style-type: none;
+}
+
+.download-panel__about {
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: $basic-color;
+  text-align: center;
+}
+
+@media ($tablet-widths) {
+  .download-panel {
+    background-color: transparent;
+  }
+
+  .download-panel__shell {
+    min-width: 300px;
+    min-height: 237px;
+    padding: 0 20px auto;
+    margin-right: 320px;
+  }
+
+  .download-panel__link {
+    width: 300px;
+  }
+}
+
+@media ($desktop-widths) {
+  .download-panel {
+    background-color: transparent;
+  }
+
+  .download-panel__shell {
+    min-width: 300px;
+    height: 288px;
+    padding: 0 130px 20px;
+    margin-right: 640px;
+  }
+
+  .download-panel__link {
+    width: 300px;
+  }
+}
