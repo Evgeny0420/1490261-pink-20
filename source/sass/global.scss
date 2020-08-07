@@ -3,18 +3,4 @@
   min-width: 320px;
   background-color: $body-color;
   font-family: $font;
-  position: relative;
-  top: -69px;
-}
-
-@media ($tablet-widths) {
-  .page__body {
-    top: -110px;
-  }
-}
-
-@media ($desktop-widths) {
-  .page__body {
-    top: -110px;
-  }
 }

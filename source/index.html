@@ -7,66 +7,71 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <section class="page-header">
       <div class="header">
-        <div class="shell-logo">
-          <a class="shell-logo__logo"></a>
-          <button class="shell-logo__button-burger" type="button"></button>
-          <button class="shell-logo__button-close shell-logo__button-close--none" type="button"></button>
+        <div class="header-shell">
+          <div class="shell-logo">
+            <a class="shell-logo__logo"></a>
+            <button class="shell-logo__button-burger" type="button"></button>
+            <button class="shell-logo__button-close shell-logo__button-close--none" type="button"></button>
+          </div>
+          <nav class="main-nav main-nav--disabled">
+            <ul class="main-nav__list site-list">
+              <li class="main-nav__item">
+                <a class="main-nav__link">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="main-nav main-nav--disabled">
-          <ul class="main-nav__list site-list">
-            <li class="main-nav__item">
-              <a class="main-nav__link">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
       </div>
-    </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">Pink - взгляните на жизнь иначе!</h1>
-      <section class="download-app">
-        <div class="container">
-          <div class="download-shell">
+      <div class="container">
+        <section class="download-shell">
             <h2 class="download-shell__heading">Взгляните на жизнь иначе!</h2>
-            <div class="download-shell__panel">
-              <a class="download-shell__link" href="https://www.apple.com/ru/ios/app-store/">
-              Скачать приложение
-              </a>
-              <ul class="download-shell__logo-list">
-                <li class="download-shell__logo-item">
-                  <a class="download-shell__logo-apple" href="https://www.apple.com/ru/ios/app-store/">
-                    <img src="img/logo-apple.svg" width="47" height="56" alt="Apple appStore">
-                  </a>
-                </li>
-                <li class="download-shell__logo-item">
-                  <a class="download-shell__logo-android" href="https://play.google.com/store">
-                    <img src="img/logo-android.svg" width="47" height="56" alt="Google Play">
-                  </a>
-                </li>
-                <li class="download-shell__logo-item">
-                  <a class="download-shell__logo-microsoft" href="https://www.microsoft.com/ru-ru/store/apps">
-                    <img src="img/logo-microsoft.svg" width="47" height="56" alt="microsoft appStore">
-                  </a>
-                </li>
-              </ul>
-              <p class="download-shell__about">
-                Доступно для iPhone, iPad, Android,<br>
-                Windows Phone, OS X, Windows 8
-              </p>
-            </div>
+        </section>
+      </div>
+      <section class="download-panel">
+        <div class="container">
+          <div class="download-panel__shell">
+            <a class="download-panel__link" href="https://www.apple.com/ru/ios/app-store/">
+            Скачать приложение
+            </a>
+            <ul class="download-panel__logo-list">
+              <li class="download-panel__logo-item">
+                <a class="download-panel__logo-apple" href="https://www.apple.com/ru/ios/app-store/">
+                  <img src="img/logo-apple.svg" width="47" height="56" alt="Apple appStore">
+                </a>
+              </li>
+              <li class="download-panel__logo-item">
+                <a class="download-panel__logo-android" href="https://play.google.com/store">
+                  <img src="img/logo-android.svg" width="47" height="56" alt="Google Play">
+                </a>
+              </li>
+              <li class="download-panel__logo-item">
+                <a class="download-panel__logo-microsoft" href="https://www.microsoft.com/ru-ru/store/apps">
+                  <img src="img/logo-microsoft.svg" width="47" height="56" alt="microsoft appStore">
+                </a>
+              </li>
+            </ul>
+            <p class="download-panel__about">
+              Доступно для iPhone, iPad, Android,<br>
+              Windows Phone, OS X, Windows 8
+            </p>
           </div>
         </div>
       </section>
+    </section>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Pink - взгляните на жизнь иначе!</h1>
       <section class="sentence">
         <p class="sentence__item">Устали от серости мегаполиса?</p>
         <p class="sentence__item">Нам есть, что вам предложить!</p>

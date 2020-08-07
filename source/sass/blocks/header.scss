@@ -1,16 +1,20 @@
 .header {
+  background-color: rgba($basic-text-color, 0.3);
+}
+
+.header-shell {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
 @media ($desktop-widths) {
-  .header {
+  .header-shell {
+    width: 1200px;
+    margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 1200px;
-    margin: 0 auto;
     box-sizing: border-box;
     padding: 27px 130px 43px;
   }
