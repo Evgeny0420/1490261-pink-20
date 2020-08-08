@@ -2,20 +2,35 @@
   background-color: $basic-color;
 }
 
+.form__shell {
+  display: grid;
+  grid-template-columns: 1fr;
+  box-sizing: border-box;
+  padding: 0;
+}
+
 .form__heading {
   @include form__heading;
 }
 
 .form__fieldset {
   border: 0 none;
+  padding: 20px;
 }
 
 .form__fieldset-radio-check {
   background-color: $basic-other-color;
 }
 
+.form__list {
+  padding: 0;
+  margin: 0;
+}
+
 .form__item {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .form__name-input {
@@ -25,6 +40,8 @@
 .form__name-check-radio {
   @include name-input;
   line-height: 18px;
+  width: 218px;
+  text-align: center;
 }
 
 .form__heading-radio-check,
@@ -44,6 +61,9 @@
   }
   border: 2px solid $body-color;
   border-radius: 1px;
+  box-sizing: border-box;
+  width: 276px;
+  height: 59px;
 }
 
 .form__information {
@@ -64,6 +84,9 @@
   color: $basic-color;
   background-color: $form-button-color;
   border-radius: 1px;
-
+  width: 276px;
+  min-height: 59px;
+  box-sizing: border-box;
+  padding: 14px;
   border: none;
 }

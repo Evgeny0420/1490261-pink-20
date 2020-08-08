@@ -8,34 +8,36 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="header">
-        <div class="shell-logo">
-          <a class="shell-logo__logo"></a>
-          <button class="shell-logo__button-burger" type="button"></button>
-          <button class="shell-logo__button-close shell-logo__button-close--none" type="button"></button>
+      <section class="header">
+        <div class="header-shell">
+          <div class="shell-logo">
+            <a class="shell-logo__logo"></a>
+            <button class="shell-logo__button-burger" type="button"></button>
+            <button class="shell-logo__button-close shell-logo__button-close--none" type="button"></button>
+          </div>
+          <nav class="main-nav main-nav--disabled">
+            <ul class="main-nav__list site-list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="main-nav main-nav--disabled">
-          <ul class="main-nav__list site-list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
+      </section>
+      <div class="title-head">
+        <h2 class="title-head__heading title-head__heading-form">Конкурс на самое безбашенное путешествие с Пинк</h2>
       </div>
     </header>
     <main class="page-main">
-      <div class="title-head">
-        <h2 class="title-head__heading">Конкурс на самое безбашенное путешествие с Пинк</h2>
-      </div>
       <section class="form">
         <form class="form__shell" action="https://echo.htmlacademy.ru" method="get">
           <p class="form__heading">
@@ -61,7 +63,7 @@
           </fieldset>
           <fieldset class="form__fieldset form__fieldset-radio-check">
             <legend class="form__name-input" >Ваши безбашенные
-              достижения в путешествии</legend>
+            достижения в путешествии</legend>
             <ul class="form__list">
               <li class="form__item">
                 <input class="visually-hidden" type="checkbox" id="selfie" name="selfie" checked>

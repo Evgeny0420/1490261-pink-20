@@ -1,15 +1,63 @@
 .review {
   background-color: $basic-other-color;
+  text-align: center;
+}
+
+.review__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .review__heading {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  margin: 0;
+}
+
+.review__about-heading {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  display: none;
+  margin: 0;
 }
 
 .review__description {
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
+  width: 280px;
+  margin: 0;
+}
+
+@media ($tablet-widths) {
+  .review__description {
+    font-size: 18px;
+    width: 620px;
+    order: -1;
+  }
+
+  .review__heading {
+    font-size: 18px;
+  }
+
+  .review__about-heading--active {
+    display: inline;
+  }
+}
+
+@media ($desktop-widths) {
+  .review__description {
+    width: 688px;
+  }
+
+  .review__heading {
+    font-size: 24px;
+  }
+
+  .review__about-heading--active {
+    font-size: 18px;
+  }
 }

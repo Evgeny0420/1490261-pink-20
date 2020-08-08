@@ -36,13 +36,14 @@
       background-repeat: no-repeat;
       width: 660px;
       height: 545px;
-      bottom: -352px;
+      bottom: 0;
     }
     background-image: none;
     padding: 80px 20px 0;
-    height: 268px;
+    height: 339px;
     justify-content: center;
     align-items: start;
+    position: static;
   }
 
   .download-shell__heading {
@@ -60,12 +61,13 @@
       background-image: url("../../img/iphone-hand-desktop@1x.png");
       width: 1050px;
       height: 645px;
-      bottom: -443px;
+      bottom: 0;
     }
     justify-content: center;
     height: 300px;
     align-items: start;
     padding: 114px 130px 0;
+    position: static;
   }
 
   .download-shell__heading {

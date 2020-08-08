@@ -47,3 +47,9 @@
   width: 292px;
   height: 302px;
 }
+
+@mixin price-item-point {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+}
