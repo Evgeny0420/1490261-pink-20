@@ -17,13 +17,14 @@
 }
 
 .price__item-head-column {
+  background-color: $basic-additional-color;
+  color: $basic-color;
+  border: 2px solid $basic-additional-color;
+
   &:nth-child(3),
   &:nth-child(2) {
     border-right-color: $body-color;
   }
-  background-color: $basic-additional-color;
-  color: $basic-color;
-  border: 2px solid $basic-additional-color;
 }
 
 .price__item-head-heading {
@@ -63,6 +64,8 @@
 }
 
 .price__icon-yes {
+  position: relative;
+
   &::after {
     content: "";
     background: url("../../img/icon-yes.svg") no-repeat;
@@ -73,10 +76,11 @@
     right: 17px;
     z-index: 20;
   }
-  position: relative;
 }
 
 .price__icon-no {
+  position: relative;
+
   &::after {
     content: "";
     background: url("../../img/icon-no.svg") no-repeat;
@@ -87,7 +91,6 @@
     right: 19px;
     z-index: 20;
   }
-  position: relative;
 }
 
 @media ($tablet-widths) {

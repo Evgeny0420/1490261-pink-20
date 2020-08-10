@@ -29,6 +29,10 @@
 }
 
 .photo-album__item {
+  display: grid;
+  grid-template-columns: min-content;
+  grid-template-rows: min-content min-content;
+
   &:nth-child(1) .photo-album__photo {
     @include photo-setting;
     background-image: url("../../img/photo-car-mobile@1x.jpg");
@@ -58,9 +62,6 @@
     @include photo-setting;
     background-image: url("../../img/photo-wing-mobile@1x.jpg");
   }
-  display: grid;
-  grid-template-columns: min-content;
-  grid-template-rows: min-content min-content;
 }
 
 .photo-album__panorama {
@@ -102,6 +103,10 @@
 }
 
 .photo-album__likes {
+  position: relative;
+  padding-left: 31px;
+  margin-top: auto;
+
   &::before {
     content: "";
     background-image: url("../../img/icon-heart.svg");
@@ -113,9 +118,6 @@
     left: 0;
     z-index: 100;
   }
-  position: relative;
-  padding-left: 31px;
-  margin-top: auto;
 }
 
 .how-is-like {
@@ -210,6 +212,8 @@
   }
 
   .photo-album__item {
+    margin: 0;
+
     &:nth-child(1) .photo-album__photo {
       @include photo-setting-desktop;
       background-image: url("../../img/photo-car-desktop@1x.jpg");
@@ -239,7 +243,6 @@
       @include photo-setting-desktop;
       background-image: url("../../img/photo-wing-desktop@1x.jpg");
     }
-    margin: 0;
   }
 
   .photo-album__description-panorama {
