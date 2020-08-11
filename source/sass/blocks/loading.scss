@@ -1,3 +1,82 @@
+.loading {
+  background-color: $basic-other-color;
+  padding: 20px;
+}
+
+.loading__form {
+  display: flex;
+  flex-direction: column;
+}
+
 .loading__heading {
   @include form__heading;
 }
+
+.loading__photo {
+  background-image: url("../../img/photo-road-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 374px;
+  margin: 0;
+}
+
+.loading__buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.loading__button-submit,
+.loading__button-reset {
+  width: 280px;
+  height: 55px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.loading__button-submit {
+  border: 3px solid $link-more-color;
+  color: $link-more-color;
+}
+
+.loading__button-reset {
+  border: 3px solid rgba($basic-additional-color, 0.1);
+  color: rgba($basic-additional-color, 0.1);
+}
+
+@media ($tablet-widths) {
+  .loading__photo {
+    background-image: url("../../img/photo-road-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 400px;
+  }
+
+  .loading__form {
+    flex-direction: row;
+  }
+}
+
+@media ($desktop-widths) {
+  .loading__photo {
+    background-image: url("../../img/photo-road-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 400px;
+  }
+
+  .loading {
+    padding: 130px;
+  }
+
+  .loading__buttons {
+    flex-direction: row;
+  }
+}
+
