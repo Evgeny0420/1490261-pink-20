@@ -9,6 +9,10 @@
 }
 
 @media ($desktop-widths) {
+  .header {
+    background-color: rgba($basic-text-color, 0.3);
+  }
+
   .header-shell {
     width: 1200px;
     margin: 0 auto;

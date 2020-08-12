@@ -12,6 +12,15 @@
   border-bottom: 1px solid $basic-text-color;
 }
 
+.shell-logo--nojs .shell-logo__button {
+  display: none;
+}
+
+.shell-logo--nojs {
+  background-color: $basic-additional-color;
+  border-bottom: 1px solid $basic-text-color;
+}
+
 .shell-logo__logo {
   background: url("../../img/logo-pink-white-mobile.svg") no-repeat;
   width: 74px;
@@ -62,12 +71,6 @@
     transform: rotate(-45deg);
   }
 }
-
-
-.shell-logo__button-close--none {
-  display: none;
-}
-
 
 @media ($tablet-widths) {
   .shell-logo {

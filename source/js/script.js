@@ -1,8 +1,11 @@
 var shellLogo = document.querySelector(".shell-logo");
 var navToggle = document.querySelector(".shell-logo__button");
 var menu = document.querySelector(".main-nav");
+var header = document.querySelector(".header");
+
 
 shellLogo.classList.remove("shell-logo--nojs");
+menu.classList.remove("main-nav--nojs");
 
 navToggle.addEventListener("click", function() {
   if (shellLogo.classList.contains("shell-logo--closed")) {
