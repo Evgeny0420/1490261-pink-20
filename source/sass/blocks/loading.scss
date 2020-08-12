@@ -97,5 +97,10 @@
   .loading__buttons {
     flex-direction: row;
   }
+
+  .loading__button-submit,
+  .loading__button-reset {
+    width: 183px;
+  }
 }
 
