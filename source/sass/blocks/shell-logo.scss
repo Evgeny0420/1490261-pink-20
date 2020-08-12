@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   height: 66px;
   box-sizing: border-box;
   padding: 20px;
@@ -69,7 +68,7 @@
 
 @media ($tablet-widths) {
   .shell-logo {
-    height: 109px;
+    height: 110px;
   }
 
   .shell-logo__logo {

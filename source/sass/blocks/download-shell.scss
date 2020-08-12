@@ -1,4 +1,13 @@
 .download-shell {
+  height: 396px;
+  box-sizing: border-box;
+  padding: 26px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -9,14 +18,6 @@
     bottom: 0;
     z-index: -1;
   }
-  height: 396px;
-  box-sizing: border-box;
-  padding: 26px 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
 }
 
 .download-shell__heading {
@@ -31,18 +32,20 @@
 
 @media ($tablet-widths) {
   .download-shell {
+    background-image: none;
+    padding: 80px 20px 0;
+    height: 339px;
+    justify-content: center;
+    align-items: start;
+    position: static;
+
     &::before {
       background-image: url("../../img/iphone-hand-tablet@1x.png");
       background-repeat: no-repeat;
       width: 660px;
       height: 545px;
-      bottom: -352px;
+      bottom: 0;
     }
-    background-image: none;
-    padding: 80px 20px 0;
-    height: 268px;
-    justify-content: center;
-    align-items: start;
   }
 
   .download-shell__heading {
@@ -56,16 +59,18 @@
 
 @media ($desktop-widths) {
   .download-shell {
-    &::before {
-      background-image: url("../../img/iphone-hand-desktop@1x.png");
-      width: 1050px;
-      height: 645px;
-      bottom: -443px;
-    }
     justify-content: center;
     height: 300px;
     align-items: start;
     padding: 114px 130px 0;
+    position: static;
+
+    &::before {
+      background-image: url("../../img/iphone-hand-desktop@1x.png");
+      width: 1050px;
+      height: 645px;
+      bottom: 0;
+    }
   }
 
   .download-shell__heading {
