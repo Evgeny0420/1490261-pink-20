@@ -1,15 +1,23 @@
 .loading {
-  background-color: $basic-other-color;
-  padding: 20px;
+  background-color: $basic-color;
 }
 
 .loading__form {
+  background-color: $basic-other-color;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  padding: 20px;
 }
 
 .loading__heading {
   @include form__heading;
+  width: 280px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+  margin: 0;
 }
 
 .loading__photo {
@@ -51,6 +59,11 @@
 }
 
 @media ($tablet-widths) {
+  .loading__heading {
+    font-size: 18px;
+    width: 422px;
+  }
+
   .loading__photo {
     background-image: url("../../img/photo-road-tablet@1x.jpg");
     background-repeat: no-repeat;
@@ -60,10 +73,16 @@
 
   .loading__form {
     flex-direction: row;
+    padding: 54px 20px;
   }
 }
 
 @media ($desktop-widths) {
+  .loading__form {
+    padding: 57px 80px;
+    width: 940px;
+  }
+
   .loading__photo {
     background-image: url("../../img/photo-road-desktop@1x.jpg");
     background-repeat: no-repeat;
@@ -72,7 +91,7 @@
   }
 
   .loading {
-    padding: 130px;
+    padding: 20px 130px;
   }
 
   .loading__buttons {
