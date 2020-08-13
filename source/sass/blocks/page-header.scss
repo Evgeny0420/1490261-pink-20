@@ -1,6 +1,6 @@
 .page-header {
   background-color: $basic-additional-color;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
   position: relative;
@@ -9,7 +9,7 @@
 
 @media ($tablet-widths) {
   .page-header {
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
@@ -17,7 +17,7 @@
 
 @media ($desktop-widths) {
   .page-header {
-    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }

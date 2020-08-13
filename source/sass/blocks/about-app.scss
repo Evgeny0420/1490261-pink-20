@@ -1,6 +1,6 @@
 .about-app {
   box-sizing: border-box;
-  padding: 20px;
+  padding: 20px 20px 0;
   display: grid;
   grid-template-rows: min-content min-content;
   row-gap: 8px;
@@ -34,7 +34,7 @@
 }
 
 .about-app__mobile-smile {
-  background-image: url("../../img/iphone-screen-mobile@1x.png");
+  background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   width: 157px;
   height: 277px;
@@ -58,7 +58,7 @@
   }
 
   .about-app__mobile-smile {
-    background-image: url("../../img/iphone-screen-3-tablet@1x.png");
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
     width: 268px;
     height: 481px;
@@ -97,17 +97,17 @@
 
   .about-app__mobile-black {
     @include about-app__mobile;
-    background-image: url("../../img/iphone-screen-1-desktop@1x.png");
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
   }
 
   .about-app__mobile-purple {
     @include about-app__mobile;
-    background-image: url("../../img/iphone-screen-2-desktop@1x.png");
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
   }
 
   .about-app__mobile-smile {
     @include about-app__mobile;
-    background-image: url("../../img/iphone-screen-3-desktop@1x.png");
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
   }
 
   .about-app__list {
