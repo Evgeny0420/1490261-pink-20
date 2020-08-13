@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
 }
 
 .review__heading {
@@ -29,7 +30,11 @@
   font-size: 14px;
   line-height: 30px;
   width: 280px;
-  margin: 0;
+  margin: 15px 0 0;
+}
+
+.reviev__button-shell {
+  padding-bottom: 40px;
 }
 
 @media ($tablet-widths) {

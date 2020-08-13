@@ -1,4 +1,5 @@
 .page-header {
+  background-color: $basic-additional-color;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -6,15 +7,7 @@
   z-index: 20;
 }
 
-@media ($mobile-widths-only) {
-  .page-header {
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-  }
-}
-
-@media ($mobile-widths-only) {
+@media ($tablet-widths) {
   .page-header {
     background-image: url("../../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;

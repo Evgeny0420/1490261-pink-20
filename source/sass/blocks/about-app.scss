@@ -1,10 +1,9 @@
 .about-app {
   box-sizing: border-box;
-  padding: 20px 20px 0;
+  padding: 20px;
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 1fr min-content;
-  row-gap: 48px;
+  grid-template-rows: min-content min-content;
+  row-gap: 8px;
 }
 
 .about-app__list {
@@ -21,11 +20,13 @@
   font-size: 18px;
   line-height: 24px;
   width: 280px;
+  margin: 23px 0 12px;
 }
 
 .about-app__item__answer {
   @include descriptions-photo;
   width: 280px;
+  margin-bottom: 30px;
 }
 
 .about-app__images {

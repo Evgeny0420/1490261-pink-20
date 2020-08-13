@@ -79,7 +79,7 @@
   box-sizing: border-box;
   padding: 12px 10px 12px 17px;
   display: grid;
-  grid-template-rows: min-content min-content min-content;
+  grid-template-rows: min-content 1fr min-content;
   grid-template-columns: 1fr;
 }
 
@@ -102,7 +102,8 @@
   margin: 0;
 }
 
-.photo-album__likes {
+.photo-album__likes,
+.photo-album__likes-panorama {
   position: relative;
   padding-left: 31px;
   margin-top: auto;
@@ -145,6 +146,11 @@
     background-repeat: no-repeat;
     width: 660px;
     height: 509px;
+  }
+
+  .photo-album__description-panorama {
+    grid-template-rows: min-content 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .photo-album__item {
