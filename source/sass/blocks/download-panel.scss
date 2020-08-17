@@ -1,6 +1,6 @@
 .download-panel {
   background-color: $mobile-background-color;
-  height: 271px;
+  min-height: 271px;
 }
 
 .download-panel__shell {
@@ -10,7 +10,7 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding: 28px 20px 38px;
+  padding: 28px 20px;
 }
 
 .download-panel__link {
@@ -25,7 +25,7 @@
   box-sizing: border-box;
   width: 280px;
   min-height: 55px;
-  padding: 12px 35px;
+  padding: 12px 20px;
   border: 3px solid $basic-color;
   border-radius: 29px;
   margin-bottom: 32px;
@@ -71,6 +71,7 @@
 @media ($tablet-widths) {
   .download-panel {
     background-color: transparent;
+    padding-bottom: 88px;
   }
 
   .download-panel__shell {
@@ -81,13 +82,21 @@
 
   .download-panel__link {
     width: 300px;
-    margin-bottom: 28px;
+    margin-bottom: 45px;
+  }
+
+  .download-panel__about {
+    font-size: 18px;
+  }
+
+  .download-panel__logo-list {
+    margin-bottom: 30px;
   }
 }
 
 @media ($desktop-widths) {
   .download-panel {
-    background-color: transparent;
+    padding-bottom: 105px;
   }
 
   .download-panel__shell {
@@ -97,6 +106,17 @@
   }
 
   .download-panel__link {
+    margin: 23px 0 68px;
     width: 300px;
+    font-size: 21px;
+    line-height: 18px;
+  }
+
+  .download-panel__logo-list {
+    margin-bottom: 50px;
+  }
+
+  .download-panel__about {
+    margin: 0;
   }
 }

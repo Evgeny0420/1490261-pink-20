@@ -87,7 +87,8 @@
   margin: 0 20px 20px;
 }
 
-.photo-album__name-author {
+.photo-album__name-author,
+.photo-album__name-author-panorama {
   font-weight: bold;
   margin: 0;
 }
@@ -97,7 +98,8 @@
   font-weight: 300;
 }
 
-.photo-album__about {
+.photo-album__about,
+.photo-album__about-panorama {
   font-weight: normal;
   margin: 0;
 }
@@ -105,8 +107,17 @@
 .photo-album__likes,
 .photo-album__likes-panorama {
   position: relative;
-  padding-left: 31px;
   margin-top: auto;
+  display: flex;
+  align-items: center;
+}
+
+.button-like {
+  border: none;
+  background-color: transparent;
+  width: 13px;
+  height: 12px;
+  position: relative;
 
   &::before {
     content: "";
@@ -115,9 +126,8 @@
     width: 13px;
     height: 12px;
     position: absolute;
-    top: 5px;
+    top: 0;
     left: 0;
-    z-index: 100;
   }
 }
 
@@ -125,7 +135,7 @@
   @include how-is-like;
   font-weight: normal;
   color: $link-more-color;
-  padding: 0;
+  padding: 0 0 0 10px;
   margin: 0;
 }
 
@@ -194,6 +204,30 @@
 
   .photo-album__photo {
     margin: 0;
+  }
+
+  .photo-album__likes {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .how-is-like {
+    padding: 0;
+  }
+
+  .photo-album__name-author-panorama {
+    order: 0;
+  }
+
+  .photo-album__about-panorama {
+    order: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .photo-album__likes-panorama {
+    order: 1;
+    flex-direction: row-reverse;
   }
 }
 

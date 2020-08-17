@@ -40,11 +40,8 @@
     position: static;
 
     &::before {
-      background-image: url("../img/iphone-hand-tablet@1x.png");
-      background-repeat: no-repeat;
-      width: 660px;
-      height: 545px;
-      bottom: 0;
+      content: "";
+      background-image: none;
     }
   }
 
@@ -62,21 +59,14 @@
     justify-content: center;
     height: 300px;
     align-items: start;
-    padding: 114px 130px 0;
+    padding: 35px 130px 0;
     position: static;
-
-    &::before {
-      background-image: url("../img/iphone-hand-desktop@1x.png");
-      width: 1050px;
-      height: 645px;
-      bottom: 0;
-    }
   }
 
   .download-shell__heading {
     width: 300px;
     font-size: 50px;
     line-height: 68px;
-    margin-bottom: 39px;
+    margin: 30px 0 0;
   }
 }
