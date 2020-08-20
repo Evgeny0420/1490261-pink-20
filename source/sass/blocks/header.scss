@@ -9,6 +9,10 @@
 }
 
 @media ($desktop-widths) {
+  .header {
+    background-color: rgba($basic-text-color, 0.3);
+  }
+
   .header-shell {
     width: 1200px;
     margin: 0 auto;
@@ -16,6 +20,6 @@
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    padding: 27px 130px 43px;
+    padding: 24px 130px 30px;
   }
 }

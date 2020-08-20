@@ -1,0 +1,29 @@
+@media ($tablet-widths) {
+  .hand-mobile {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/iphone-hand-tablet@1x.png");
+      background-repeat: no-repeat;
+      width: 660px;
+      height: 545px;
+      bottom: 0;
+      left: 50%;
+      margin-left: -330px;
+      z-index: -1;
+    }
+  }
+}
+
+@media ($desktop-widths) {
+  .hand-mobile {
+    &::before {
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+      width: 1050px;
+      height: 645px;
+      bottom: 0;
+      left: 50%;
+      margin-left: -455px;
+    }
+  }
+}

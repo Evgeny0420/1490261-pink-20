@@ -4,7 +4,7 @@
   align-items: center;
   height: 66px;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .shell-logo--color {
@@ -12,15 +12,23 @@
   border-bottom: 1px solid $basic-text-color;
 }
 
+.shell-logo--nojs .shell-logo__button {
+  display: none;
+}
+
+.shell-logo--nojs {
+  background-color: $basic-additional-color;
+  border-bottom: 1px solid $basic-text-color;
+}
+
 .shell-logo__logo {
-  background: url("../../img/logo-pink-white-mobile.svg") no-repeat;
+  background: url("../img/logo-pink-white-mobile.svg") no-repeat;
   width: 74px;
   height: 23px;
 }
 
-.shell-logo__button-burger {
-  background-image: url("../../img/icon-menu-burger.svg");
-  background-repeat: no-repeat;
+.shell-logo__button {
+  position: relative;
   width: 50px;
   height: 24px;
   background-color: transparent;
@@ -28,12 +36,22 @@
   cursor: pointer;
 }
 
-.shell-logo__button-burger--none {
-  display: none;
+.shell-logo--closed .shell-logo__button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 4px;
+  border-radius: 1px;
+  background-color: $basic-color;
+  box-shadow: 0 10px 0 0 $basic-color, 0 20px 0 0 $basic-color;
 }
 
+.shell-logo--opened .shell-logo__button {
+  width: 23px;
+  height: 23px;
 
-.shell-logo__button-close {
   &::before,
   &::after {
     content: "";
@@ -52,19 +70,7 @@
   &::after {
     transform: rotate(-45deg);
   }
-  position: relative;
-  width: 23px;
-  height: 23px;
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
 }
-
-
-.shell-logo__button-close--none {
-  display: none;
-}
-
 
 @media ($tablet-widths) {
   .shell-logo {
@@ -72,10 +78,11 @@
   }
 
   .shell-logo__logo {
-    background-image: url("../../img/logo-pink-white-tablet.svg");
+    background-image: url("../img/logo-pink-white-tablet.svg");
     background-repeat: no-repeat;
     width: 145px;
     height: 40px;
+    margin-bottom: 16px;
   }
 }
 
@@ -88,13 +95,12 @@
   }
 
   .shell-logo__logo {
-    background: url("../../img/logo-pink-white-desktop.svg") no-repeat;
+    background: url("../img/logo-pink-white-desktop.svg") no-repeat;
     width: 147px;
     height: 40px;
   }
 
-  .shell-logo__button-burger,
-  .shell-logo__button-close {
+  .shell-logo__button {
     display: none;
   }
 }

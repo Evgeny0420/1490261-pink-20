@@ -11,7 +11,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/iphone-hand-mobile@1x.png");
+    background-image: url("../img/iphone-hand-mobile@1x.png");
     background-repeat: no-repeat;
     width: 320px;
     height: 286px;
@@ -33,23 +33,20 @@
 @media ($tablet-widths) {
   .download-shell {
     background-image: none;
-    padding: 80px 20px 0;
-    height: 339px;
+    padding: 20px;
+    height: 260px;
     justify-content: center;
     align-items: start;
     position: static;
 
     &::before {
-      background-image: url("../../img/iphone-hand-tablet@1x.png");
-      background-repeat: no-repeat;
-      width: 660px;
-      height: 545px;
-      bottom: 0;
+      content: "";
+      background-image: none;
     }
   }
 
   .download-shell__heading {
-    margin: 0;
+    margin: 72px 40px 0;
     font-size: 40px;
     line-height: 48px;
     width: 220px;
@@ -62,21 +59,14 @@
     justify-content: center;
     height: 300px;
     align-items: start;
-    padding: 114px 130px 0;
+    padding: 65px 130px 0;
     position: static;
-
-    &::before {
-      background-image: url("../../img/iphone-hand-desktop@1x.png");
-      width: 1050px;
-      height: 645px;
-      bottom: 0;
-    }
   }
 
   .download-shell__heading {
     width: 300px;
     font-size: 50px;
     line-height: 68px;
-    margin-bottom: 39px;
+    margin: 30px 0 0;
   }
 }

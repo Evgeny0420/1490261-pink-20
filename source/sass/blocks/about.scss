@@ -1,6 +1,167 @@
 .about {
   background-color: $basic-other-color;
-  background-image: url("../../img/bg-triangle-white.svg");
+  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-position-x: 50%;
 }
+
+.about__app {
+  box-sizing: border-box;
+  padding: 20px 20px 0;
+  display: grid;
+  grid-template-rows: min-content min-content;
+  row-gap: 8px;
+}
+
+.about__list {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about__item {
+  list-style-type: none;
+}
+
+.about__item-heading {
+  font-size: 18px;
+  line-height: 24px;
+  width: 280px;
+  margin: 23px 0 12px;
+}
+
+.about__item-answer {
+  @include descriptions-photo;
+  width: 280px;
+  margin-bottom: 30px;
+
+  br {
+    display: none;
+  }
+}
+
+.about__images {
+  margin: 0;
+}
+
+.about__mobile-smile {
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  width: 157px;
+  height: 277px;
+  margin: 0 auto;
+}
+
+.about__mobile-black,
+.about__mobile-purple {
+  display: none;
+}
+
+@media ($tablet-widths) {
+  .about__app {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 22px;
+  }
+
+  .about__images {
+    order: 0;
+  }
+
+  .about__mobile-smile {
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-repeat: no-repeat;
+    width: 268px;
+    height: 481px;
+  }
+
+  .about__item-heading {
+    width: 310px;
+    margin: 0 0 12px;
+  }
+
+  .about__list {
+    text-align: start;
+    order: 2;
+    padding: 68px 20px 10px;
+  }
+
+  .about__item-answer {
+    width: 310px;
+    margin: 0 0 35px;
+
+    br {
+      display: block;
+    }
+  }
+}
+
+@media ($desktop-widths) {
+  .about__app {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    padding: 40px 130px 0;
+    margin: 0 auto;
+  }
+
+  .about__images {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 32px;
+  }
+
+  .about__mobile-black,
+  .about__mobile-purple {
+    display: block;
+  }
+
+  .about__mobile-black {
+    @include about-app__mobile;
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+  }
+
+  .about__mobile-purple {
+    @include about-app__mobile;
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
+  }
+
+  .about__mobile-smile {
+    @include about-app__mobile;
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+  }
+
+  .about__list {
+    text-align: center;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 75px;
+    padding: 50px 20px 10px;
+  }
+
+  .about__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__item-heading {
+    font-size: 30px;
+    line-height: 30px;
+    width: 234px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .about__item-answer {
+    font-size: 18px;
+    line-height: 30px;
+    width: 245px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
