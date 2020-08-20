@@ -34,6 +34,10 @@
   @include descriptions-photo;
   width: 280px;
   margin-bottom: 30px;
+
+  br {
+    display: none;
+  }
 }
 
 .about__images {
@@ -85,6 +89,10 @@
   .about__item-answer {
     width: 310px;
     margin: 0 0 35px;
+
+    br {
+      display: block;
+    }
   }
 }
 
@@ -150,6 +158,10 @@
     font-size: 18px;
     line-height: 30px;
     width: 245px;
+
+    br {
+      display: none;
+    }
   }
 }
 
