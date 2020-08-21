@@ -45,95 +45,98 @@
               шанс выиграть ценный приз — 1000
               миль на вашу бонусную карту!
             </p>
-            <fieldset class="form-fieldset-initials">
-              <ul class="form__list">
-                <li class="form__item form__item-initials">
+            <fieldset class="form__fieldset form__fieldset--initials">
+              <ul class="form__list form__list--initials">
+                <li class="form__item form__item--initials">
                   <label class="form__name-input" for="surname">Фамилия:</label>
                   <input class="form__write form__write--width" type="text" id="surname" name="surname" placeholder="Укажите фамилию *">
                 </li>
-                <li class="form__item form__item-initials">
+                <li class="form__item form__item--initials">
                   <label class="form__name-input" for="name">Имя:</label>
                   <input class="form__write form__write--width" type="text" id="name" name="name" placeholder="Введите ваше имя *">
                 </li>
-                <li class="form__item form__item-initials">
+                <li class="form__item form__item--initials">
                   <label class="form__name-input" for="patronymic">Отчество:</label>
                   <input class="form__write form__write--width" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
                 </li>
               </ul>
             </fieldset>
             <div class="form__fieldset-shell form__fieldset-shell--checkbox">
-              <fieldset class="form__fieldset">
+              <fieldset class="form__fieldset form__fieldset--check-radio">
                 <legend class="form__name-fieldset" >Ваши безбашенные
                 достижения в путешествии</legend>
-                <ul class="form__list">
+                <ul class="form__list form__list--checkbox">
                   <li class="form__item">
                     <input class="visually-hidden form__checkbox" type="checkbox" id="selfie" name="selfie" checked>
-                    <label class="form__heading-radio-check" for="selfie">Сделал селфи с акулой</label>
+                    <label class="form__heading-radio-check form__heading-radio-check--checkbox" for="selfie">Сделал селфи с акулой</label>
                   </li>
                   <li class="form__item">
                     <input class="visually-hidden form__checkbox" type="checkbox" id="beach" name="beach" checked>
-                    <label class="form__heading-radio-check" for="beach">Обгорел на пляже</label>
+                    <label class="form__heading-radio-check form__heading-radio-check--checkbox" for="beach">Обгорел на пляже</label>
                   </li>
                   <li class="form__item">
                     <input class="visually-hidden form__checkbox" type="checkbox" id="chuck-norris" name="chuck-norris">
-                    <label class="form__heading-radio-check" for="chuck-norris">Видел Чака Норриса</label>
+                    <label class="form__heading-radio-check form__heading-radio-check--checkbox" for="chuck-norris">Видел Чака Норриса</label>
                   </li>
                   <li class="form__item">
                     <input class="visually-hidden form__checkbox" type="checkbox" id="souvenir" name="souvenir">
-                    <label class="form__heading-radio-check" for="souvenir">Накупил сувениров</label>
+                    <label class="form__heading-radio-check form__heading-radio-check--checkbox" for="souvenir">Накупил сувениров</label>
                   </li>
                   <li class="form__item">
                     <input class="visually-hidden form__checkbox" type="checkbox" id="tower" name="tower" checked>
-                    <label class="form__heading-radio-check" for="tower">Удержал башню</label>
+                    <label class="form__heading-radio-check form__heading-radio-check--checkbox" for="tower">Удержал башню</label>
                   </li>
                   <li class="form__item">
                     <input class="visually-hidden form__checkbox" type="checkbox" id="hotel" name="hotel">
-                    <label class="form__heading-radio-check" for="hotel">Разгромил отель</label>
+                    <label class="form__heading-radio-check form__heading-radio-check--checkbox" for="hotel">Разгромил отель</label>
                   </li>
                 </ul>
               </fieldset>
             </div>
-            <fieldset class="form__fieldset form__fieldset--contacts">
-              <legend class="form__name-fieldset form__name-input--disabled">Контактная информация</legend>
-              <ul class="form__list form__list--contacts">
-                <li class="form__item form__item--contacts">
-                  <label class="form__name-input" for="phone-number">Номер телефона</label>
-                  <input class="form__write form__write--contacts" type="tel" id="phone-number" name="phone-number" placeholder="Номер, пожалуйста">
-                </li>
-                <li class="form__item form__item--contacts">
-                  <label class="form__name-input" for="email">Адрес почты</label>
-                  <input class="form__write form__write--contacts" type="email" id="email" name="email" placeholder="Введите почту *">
-                </li>
-              </ul>
-            </fieldset>
+            <div class="form__fieldset-shell form__fieldset-shell--contacts">
+              <fieldset class="form__fieldset form__fieldset--contacts">
+                <legend class="form__name-fieldset form__name-input--disabled">Контактная информация</legend>
+                <ul class="form__list form__list--contacts">
+                  <li class="form__item form__item--contacts">
+                    <label class="form__name-input" for="phone-number">Номер телефона</label>
+                    <input class="form__write form__write--contacts" type="tel" id="phone-number" name="phone-number" placeholder="Номер, пожалуйста">
+                  </li>
+                  <li class="form__item form__item--contacts">
+                    <label class="form__name-input" for="email">Адрес почты</label>
+                    <input class="form__write form__write--contacts" type="email" id="email" name="email" placeholder="Введите почту *">
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
             <div class="form__fieldset-shell form__fieldset-shell--radio">
-              <fieldset class="form__fieldset">
+              <fieldset class="form__fieldset form__fieldset--check-radio">
                 <legend class="form__name-fieldset">
                   С каким приложением
                   путешествовали?
                 </legend>
-                <ul class="form__list">
+                <ul class="form__list form__list--radio">
                   <li class="form__item">
-                    <input class="visually-hidden" type="radio" id="ios" name="app" value="pink-ios" checked>
-                    <label class="form__heading-radio-check" for="ios">Pink для iOS</label>
+                    <input class="visually-hidden form__radio" type="radio" id="ios" name="app" value="pink-ios" checked>
+                    <label class="form__heading-radio-check form__heading-radio-check--radio" for="ios">Pink для iOS</label>
                   </li>
                   <li class="form__item">
-                    <input class="visually-hidden" type="radio" id="android" name="app" value="pink-android">
-                    <label class="form__heading-radio-check" for="android">Pink на Android</label>
+                    <input class="visually-hidden form__radio" type="radio" id="android" name="app" value="pink-android">
+                    <label class="form__heading-radio-check form__heading-radio-check--radio" for="android">Pink на Android</label>
                   </li>
                   <li class="form__item">
-                    <input class="visually-hidden" type="radio" id="windows" name="app" value="pink-windows">
-                    <label class="form__heading-radio-check" for="windows">Windows Phone</label>
+                    <input class="visually-hidden form__radio" type="radio" id="windows" name="app" value="pink-windows">
+                    <label class="form__heading-radio-check form__heading-radio-check--radio" for="windows">Windows Phone</label>
                   </li>
                 </ul>
               </fieldset>
             </div>
-            <fieldset class="form__fieldset form__fieldset--textarea">
-              <legend class="form__name-fieldset">Опишите свои эмоции</legend>
-              <label class="form__name-fieldset" for="text-mail"></label>
-              <textarea class="form__write form__write--resize" id="text-mail" name="text-mail" placeholder="Можно прям в красках, не
-      стесняясь в выражениях"></textarea>
-            </fieldset>
+            <div class="form__fieldset-shell form__fieldset-shell--textarea">
+              <fieldset class="form__fieldset form__fieldset--textarea">
+                <legend class="form__name-fieldset form__name-fieldset--textarea">Опишите свои эмоции</legend>
+                <label class="form__name-fieldset" for="text-mail"></label>
+                <textarea class="form__write form__write--resize" id="text-mail" name="text-mail" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </fieldset>
+            </div>
             <div class="form__footer">
               <button class="form__button-submit" type="submit">Отправить форму</button>
               <p class="form__information"><span class="form__information-asterisk">*</span> — обязательные поля</p>
