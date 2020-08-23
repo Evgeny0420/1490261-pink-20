@@ -72,6 +72,19 @@
   .download-panel {
     background-color: transparent;
     padding-bottom: 88px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/iphone-hand-tablet@1x.png");
+      background-repeat: no-repeat;
+      width: 660px;
+      height: 545px;
+      bottom: 0;
+      left: 50%;
+      margin-left: -330px;
+      z-index: -1;
+    }
   }
 
   .download-panel__shell {
@@ -99,6 +112,15 @@
   .download-panel {
     padding-top: 13px;
     padding-bottom: 105px;
+
+    &::before {
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+      width: 1050px;
+      height: 645px;
+      bottom: 0;
+      left: 50%;
+      margin-left: -455px;
+    }
   }
 
   .download-panel__shell {

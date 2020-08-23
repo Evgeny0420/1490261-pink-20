@@ -56,6 +56,7 @@
   border: 0 none;
   box-sizing: border-box;
   padding: 19px 20px 24px;
+  margin: 0;
 
   &--initials {
     padding-bottom: 42px;
@@ -175,6 +176,10 @@
   text-transform: uppercase;
   text-align: center;
   margin: 34px 0 16px;
+
+  &--none {
+    display: none;
+  }
 }
 
 .form__information-asterisk {
@@ -463,7 +468,7 @@
   .form__shell {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 55px;
+    row-gap: 56px;
   }
 
   .form__heading {
@@ -489,28 +494,37 @@
     }
 
     &--checkbox {
+      min-width: 260px;
+      max-width: 312px;
+
       &:first-child {
         order: 0;
+        margin-left: 58px;
       }
 
       &:nth-child(2) {
         order: 3;
+        margin-left: 58px;
       }
 
       &:nth-child(3) {
         order: 1;
+        margin-left: 55px;
       }
 
       &:nth-child(4) {
         order: 4;
+        margin-left: 55px;
       }
 
       &:nth-child(5) {
         order: 2;
+        margin-left: 35px;
       }
 
       &:nth-child(6) {
         order: 5;
+        margin-left: 35px;
       }
     }
   }
@@ -522,7 +536,6 @@
     }
 
     &--checkbox {
-      max-width: 940px;
       grid-template-columns: 1fr 1fr 1fr;
       padding: 0;
     }
@@ -532,6 +545,7 @@
     &--radio {
       grid-column-start: 2;
       grid-column-end: 3;
+      width: 470px;
     }
 
     &--checkbox {
@@ -553,22 +567,26 @@
 
   .form__fieldset {
     &--initials {
-      padding-right: 32px;
-      padding-top: 16px;
+      padding-right: 34px;
+      padding-top: 12px;
     }
 
     &--textarea {
-      width: 936px;
-      height: 213px;
+      width: 940px;
+      height: 224px;
     }
 
     &--radio {
-      padding: 50px 0 59px 54px;
+      width: 435px;
+      box-sizing: border-box;
+      padding: 47px 15px 59px 15px;
       margin: 0 0 0 34px;
     }
 
     &--checkbox {
-      padding: 0;
+      width: 940px;
+      box-sizing: border-box;
+      padding: 48px 0 63px 0;
     }
 
     &--contacts {
@@ -579,6 +597,8 @@
   .form__footer {
     grid-column-start: 1;
     grid-column-end: 3;
+    padding-top: 6px;
+    margin-bottom: 0;
   }
 
   .form__write {
@@ -588,12 +608,18 @@
     }
 
     &--resize {
-      width: 816px;
-      height: 124px;
+      width: 821px;
+      height: 126px;
     }
 
     &--contacts {
       width: 371px;
+    }
+
+    &::-webkit-input-placeholder {
+      padding-left: 18px;
+      padding-top: 6px;
+      text-align: start;
     }
   }
 
@@ -602,6 +628,18 @@
 
     &--radio {
       width: 368px;
+    }
+  }
+
+  .form__heading-radio-check {
+    &--radio {
+      margin-left: 60px;
+    }
+  }
+
+  .form__information {
+    &--none {
+      display: inline;
     }
   }
 }
