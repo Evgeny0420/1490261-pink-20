@@ -166,7 +166,7 @@
 
   .loading__list {
     flex-direction: column;
-    padding: 12px 0px 41px 19px;
+    padding: 12px 0 41px 19px;
     margin: 0;
   }
 
@@ -283,7 +283,7 @@
   .loading__range-control {
     width: 285px;
     padding: 33px 0 5px 0;
-    margin: 0px 31px 13px 0;
+    margin: 0 31px 13px 0;
 
     &::after {
       bottom: -12px;
@@ -302,4 +302,3 @@
     top: 28px;
   }
 }
-
