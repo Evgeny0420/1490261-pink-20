@@ -116,7 +116,11 @@
   }
 
   .footer__author {
-    margin: 15px 42px 0;
+    margin: 18px 42px 0;
+
+    &::after {
+      top: -7px;
+    }
   }
 
   .footer__text-link {

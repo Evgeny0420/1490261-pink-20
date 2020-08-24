@@ -157,20 +157,27 @@
             <figure class="loading__photo">
             </figure>
             <form class="loading__form-loading" action="https://echo.htmlacademy.ru" method="get">
-              <ul class="loading__list">
-                <li class="loading__item">
-                  <input class="visually-hidden" type="radio" id="pruning" name="filters">
-                  <label for="pruning"></label>
-                </li>
-                <li class="loading__item">
-                  <input class="visually-hidden" type="radio" id="shade" name="filters">
-                  <label for="shade"></label>
-                </li>
-                <li class="loading__item">
-                  <input class="visually-hidden" type="radio" id="contrast" name="filters">
-                  <label for="contrast"></label>
-                </li>
-              </ul>
+              <div class="loading__settings">
+                <div class="loading__list">
+                  <button class="loading__image-settings-crop loading__image-settings--active" type="button"></button>
+                  <button class="loading__image-settings-fill loading__image-settings--active" type="button"></button>
+                  <button class="loading__image-settings-contrast loading__image-settings--active" type="button"></button>
+                </div>
+                <div class="loading__range-controls">
+                  <div class="loading__range-control">
+                    <div class="loading__scale"></div>
+                    <div class="loading__toggle" tabindex="0"></div>
+                  </div>
+                  <div class="loading__range-control loading__range-control--none">
+                    <div class="loading__scale"></div>
+                    <div class="loading__toggle" tabindex="0"></div>
+                  </div>
+                  <div class="loading__range-control loading__range-control--none">
+                    <div class="loading__scale"></div>
+                    <div class="loading__toggle" tabindex="0"></div>
+                  </div>
+                </div>
+              </div>
               <div class="loading__buttons">
                 <button class="loading__button-submit" type="submit">Запостить</button>
                 <button class="loading__button-reset" type="reset">Отмена</button>
