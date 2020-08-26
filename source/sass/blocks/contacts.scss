@@ -39,6 +39,17 @@
   text-decoration: none;
   width: 211px;
   margin: 0;
+
+  &:hover {
+    color: $basic-additional-color;
+    text-decoration: underline;
+  }
+
+  &:active,
+  &:focus {
+    color: rgba($basic-additional-color, 0.3);
+    text-decoration: none;
+  }
 }
 
 .contacts__item-heading {
@@ -97,6 +108,7 @@
   .contacts__list {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
+    column-gap: 79px;
   }
 
   .contacts__item {

@@ -20,6 +20,15 @@
   color: $basic-color;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover {
+    color: $link-more-color;
+  }
+
+  &:active,
+  &:focus {
+    color: rgba($link-more-color, 0.3);
+  }
 }
 
 .main-nav__item {
@@ -59,5 +68,23 @@
     font-weight: normal;
     color: $basic-color;
     text-transform: none;
+    position: relative;
+
+    &:active,
+    &:focus {
+      color: rgba($basic-color, 0.3);
+    }
+
+    &--active {
+      &::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: $basic-color;
+        position: absolute;
+        top: 31px;
+        left: 0;
+      }
+    }
   }
 }

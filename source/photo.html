@@ -11,7 +11,13 @@
       <section class="header header--nojs">
         <div class="header-shell">
           <div class="shell-logo shell-logo--closed shell-logo--nojs">
-            <a class="shell-logo__logo"></a>
+            <a class="shell-logo__logo">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="shell-logo__logo-icon" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="PinkApp">
+              </picture>
+            </a>
             <button class="shell-logo__button" type="button"></button>
           </div>
           <nav class="main-nav main-nav--disabled">
@@ -20,7 +26,7 @@
                 <a class="main-nav__link" href="index.html">Главная</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link">Фотографии</a>
+                <a class="main-nav__link main-nav__link--active">Фотографии</a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="form.html">Конкурс</a>

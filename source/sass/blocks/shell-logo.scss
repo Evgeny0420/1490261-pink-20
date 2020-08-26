@@ -21,11 +21,6 @@
   border-bottom: 1px solid $basic-text-color;
 }
 
-.shell-logo__logo {
-  background: url("../img/logo-pink-white-mobile.svg") no-repeat;
-  width: 74px;
-  height: 23px;
-}
 
 .shell-logo__button {
   position: relative;
@@ -36,16 +31,33 @@
   cursor: pointer;
 }
 
-.shell-logo--closed .shell-logo__button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50px;
-  height: 4px;
-  border-radius: 1px;
-  background-color: $basic-color;
-  box-shadow: 0 10px 0 0 $basic-color, 0 20px 0 0 $basic-color;
+.shell-logo--closed .shell-logo__button {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: $basic-color;
+    box-shadow: 0 10px 0 0 $basic-color, 0 20px 0 0 $basic-color;
+  }
+
+  &:hover {
+    &::before {
+      background-color: $link-more-color;
+      box-shadow: 0 10px 0 0 $link-more-color, 0 20px 0 0 $link-more-color;
+    }
+  }
+
+  &:active,
+  &:focus {
+    &::before {
+      background-color: rgba($link-more-color, 0.3);
+      box-shadow: 0 10px 0 0 rgba($link-more-color, 0.3), 0 20px 0 0 rgba($link-more-color, 0.3);
+    }
+  }
 }
 
 .shell-logo--opened .shell-logo__button {
@@ -70,6 +82,21 @@
   &::after {
     transform: rotate(-45deg);
   }
+
+  &:hover {
+    &::before,
+    &::after {
+      background-color: $link-more-color;
+    }
+  }
+
+  &:active,
+  &:focus {
+    &::before,
+    &::after {
+      background-color: rgba($link-more-color, 0.3);
+    }
+  }
 }
 
 @media ($tablet-widths) {
@@ -78,11 +105,12 @@
   }
 
   .shell-logo__logo {
-    background-image: url("../img/logo-pink-white-tablet.svg");
-    background-repeat: no-repeat;
+    margin-bottom: 16px;
+  }
+
+  .shell-logo__logo-icon {
     width: 145px;
     height: 40px;
-    margin-bottom: 16px;
   }
 }
 
@@ -95,7 +123,10 @@
   }
 
   .shell-logo__logo {
-    background: url("../img/logo-pink-white-desktop.svg") no-repeat;
+    margin-bottom: 11px;
+  }
+
+  .shell-logo__logo-icon {
     width: 147px;
     height: 40px;
   }

@@ -11,13 +11,19 @@
       <section class="header header--nojs">
         <div class="header-shell">
           <div class="shell-logo shell-logo--closed shell-logo--nojs">
-            <a class="shell-logo__logo"></a>
+            <a class="shell-logo__logo">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="shell-logo__logo-icon" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="PinkApp">
+              </picture>
+            </a>
             <button class="shell-logo__button" type="button"></button>
           </div>
           <nav class="main-nav main-nav--disabled main-nav--nojs">
             <ul class="main-nav__list site-list">
               <li class="main-nav__item">
-                <a class="main-nav__link">Главная</a>
+                <a class="main-nav__link main-nav__link--active">Главная</a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="photo.html">Фотографии</a>
@@ -234,10 +240,10 @@
               </li>
               <li class="contacts__item">
                 <h4 class="contacts__item-heading">Приезжайте в гости:</h4>
-                <p class="contacts__item-info">
-                  ул. Большая
+                <a class="contacts__item-info">
+                  ул. Большая <br>
                   Конюшенная, 19/8
-                </p>
+                </a>
               </li>
             </ul>
           </div>
@@ -264,7 +270,7 @@
             </li>
             <li class="footer__social-item">
               <a class="footer__social-link" href="#">
-                <img src="img/icon-youtube.svg" width="15" height="13" alt="youtube">
+                <img class="footer__social-icon" src="img/icon-youtube.svg" width="15" height="13" alt="youtube">
               </a>
             </li>
           </ul>

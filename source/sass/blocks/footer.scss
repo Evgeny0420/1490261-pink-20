@@ -40,6 +40,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    border-color: $basic-additional-color;
+  }
+
+  &:active,
+  &:focus {
+    border-color: rgba($basic-additional-color, 0.1);
+
+    .footer__social-icon {
+      opacity: 0.1;
+    }
+  }
 }
 
 .footer__author {

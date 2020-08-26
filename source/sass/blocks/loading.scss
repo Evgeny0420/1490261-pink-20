@@ -59,14 +59,38 @@
 }
 
 .loading__button-submit {
+  background-color: $basic-color;
   border: 3px solid $link-more-color;
   color: $link-more-color;
   margin-bottom: 12px;
+
+  &:hover {
+    background-color: $link-more-color;
+    color: $basic-color;
+  }
+
+  &:active,
+  &:focus {
+    color: rgba($basic-color, 0.3);
+  }
 }
 
 .loading__button-reset {
+  background-color: $basic-color;
   border: 3px solid rgba($basic-additional-color, 0.1);
   color: rgba($basic-additional-color, 0.1);
+
+  &:hover {
+    border-color: rgba($basic-additional-color, 0.3);
+    color: rgba($basic-additional-color, 0.3);
+  }
+
+  &:active,
+  &:focus {
+    border-color: rgba($basic-additional-color, 0.1);
+    background-color: rgba($basic-additional-color, 0.3);
+    color: rgba($basic-color, 0.3);
+  }
 }
 
 .loading__image-settings-crop {
