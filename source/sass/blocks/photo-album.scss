@@ -21,47 +21,10 @@
   padding: 44px 20px 50px;
 }
 
-.photo-album__panorama-photo {
-  background-image: url("../img/panorama-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  width: 320px;
-  height: 137px;
-}
-
 .photo-album__item {
   display: grid;
   grid-template-columns: min-content;
   grid-template-rows: min-content min-content;
-
-  &:nth-child(1) .photo-album__photo {
-    @include photo-setting;
-    background-image: url("../img/photo-car-mobile@1x.jpg");
-  }
-
-  &:nth-child(2) .photo-album__photo {
-    @include photo-setting;
-    background-image: url("../img/photo-drumset-mobile@1x.jpg");
-  }
-
-  &:nth-child(3) .photo-album__photo {
-    @include photo-setting;
-    background-image: url("../img/photo-window-mobile@1x.jpg");
-  }
-
-  &:nth-child(4) .photo-album__photo {
-    @include photo-setting;
-    background-image: url("../img/photo-fair-mobile@1x.jpg");
-  }
-
-  &:nth-child(5) .photo-album__photo {
-    @include photo-setting;
-    background-image: url("../img/photo-pov-mobile@1x.jpg");
-  }
-
-  &:nth-child(6) .photo-album__photo {
-    @include photo-setting;
-    background-image: url("../img/photo-wing-mobile@1x.jpg");
-  }
 }
 
 .photo-album__panorama {
@@ -126,9 +89,15 @@
     width: 13px;
     height: 12px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 1px;
+    left: -2px;
   }
+}
+
+.photo-album__picture {
+  display: flex;
+  width: 100%;
+  height: auto;
 }
 
 .how-is-like,
@@ -163,9 +132,7 @@
     grid-column-end: 3;
   }
 
-  .photo-album__panorama-photo {
-    background-image: url("../img/panorama-tablet@1x.jpg");
-    background-repeat: no-repeat;
+  .photo-album__panorama-photo-img {
     width: 660px;
     height: 509px;
   }
@@ -177,43 +144,15 @@
     padding: 23px 30px 25px;
   }
 
-  .photo-album__item {
-    &:nth-child(1) .photo-album__photo {
-      @include photo-setting-tab;
-      background-image: url("../img/photo-car-tablet@1x.jpg");
-    }
-
-    &:nth-child(2) .photo-album__photo {
-      @include photo-setting-tab;
-      background-image: url("../img/photo-drumset-tablet@1x.jpg");
-    }
-
-    &:nth-child(3) .photo-album__photo {
-      @include photo-setting-tab;
-      background-image: url("../img/photo-window-tablet@1x.jpg");
-    }
-
-    &:nth-child(4) .photo-album__photo {
-      @include photo-setting-tab;
-      background-image: url("../img/photo-fair-tablet@1x.jpg");
-    }
-
-    &:nth-child(5) .photo-album__photo {
-      @include photo-setting-tab;
-      background-image: url("../img/photo-pov-tablet@1x.jpg");
-    }
-
-    &:nth-child(6) .photo-album__photo {
-      @include photo-setting-tab;
-      background-image: url("../img/photo-wing-tablet@1x.jpg");
-    }
+  .photo-album__photo-img {
+    @include photo-setting-tab;
   }
 
   .photo-album__description {
     width: 100%;
     min-height: 155px;
     margin: 0;
-    padding: 23px 30px 22px;
+    padding: 22px 30px 24px;
   }
 
   .photo-album__photo {
@@ -231,7 +170,8 @@
   }
 
   .how-is-like-panorama {
-    margin-right: 15px;
+    margin-right: 19px;
+    padding-top: 2px;
   }
 
   .photo-album__name-author-panorama {
@@ -261,7 +201,7 @@
 @media ($desktop-widths) {
   .photo-album__heading {
     width: 572px;
-    padding: 91px 20px;
+    padding: 90px 20px;
   }
 
   .photo-album__list {
@@ -276,53 +216,29 @@
     grid-column-end: 4;
   }
 
-  .photo-album__panorama-photo {
-    background-image: url("../img/panorama-desktop@1x.jpg");
-    background-repeat: no-repeat;
+  .photo-album__panorama-photo-img {
     width: 1200px;
     height: 506px;
   }
 
   .photo-album__item {
     margin: 0;
+  }
 
-    &:nth-child(1) .photo-album__photo {
-      @include photo-setting-desktop;
-      background-image: url("../img/photo-car-desktop@1x.jpg");
-    }
-
-    &:nth-child(2) .photo-album__photo {
-      @include photo-setting-desktop;
-      background-image: url("../img/photo-drumset-desktop@1x.jpg");
-    }
-
-    &:nth-child(3) .photo-album__photo {
-      @include photo-setting-desktop;
-      background-image: url("../img/photo-window-desktop@1x.jpg");
-    }
-
-    &:nth-child(4) .photo-album__photo {
-      @include photo-setting-desktop;
-      background-image: url("../img/photo-fair-desktop@1x.jpg");
-    }
-
-    &:nth-child(5) .photo-album__photo {
-      @include photo-setting-desktop;
-      background-image: url("../img/photo-pov-desktop@1x.jpg");
-    }
-
-    &:nth-child(6) .photo-album__photo {
-      @include photo-setting-desktop;
-      background-image: url("../img/photo-wing-desktop@1x.jpg");
-    }
+  .photo-album__photo-img {
+    @include photo-setting-desktop;
   }
 
   .photo-album__description-panorama {
-    margin: 0 130px 47px;
-    padding: 23px 28px 25px;
+    margin: 0 130px 50px;
+    padding: 23px 28px;
   }
 
   .photo-album__about-panorama {
     width: 100%;
+  }
+
+  .photo-album__description {
+    padding: 24px 27px 22px;
   }
 }
