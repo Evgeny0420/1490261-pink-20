@@ -33,6 +33,31 @@
   grid-template-rows: min-content min-content min-content;
 }
 
+.photo-album__panorama-photo {
+  position: relative;
+}
+
+.photo-album__panorama-info {
+  width: 140px;
+  min-height: 36px;
+  background-color: $link-more-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.photo-album__panorama-info-text {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $basic-color;
+  margin: 0;
+}
+
 .photo-album__description,
 .photo-album__description-panorama {
   @include descriptions-photo;
@@ -132,6 +157,10 @@
     grid-column-end: 3;
   }
 
+  .photo-album__panorama-info {
+    top: 57px;
+  }
+
   .photo-album__panorama-photo-img {
     width: 660px;
     height: 509px;
@@ -214,6 +243,11 @@
   .photo-album__panorama {
     grid-column-start: 1;
     grid-column-end: 4;
+  }
+
+  .photo-album__panorama-info {
+    top: 54px;
+    right: 130px;
   }
 
   .photo-album__panorama-photo-img {
