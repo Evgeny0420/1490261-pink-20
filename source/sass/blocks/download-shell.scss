@@ -1,7 +1,7 @@
 .download-shell {
-  height: 396px;
+  height: 462px;
   box-sizing: border-box;
-  padding: 26px 0 0;
+  padding: 92px 0 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -33,15 +33,18 @@
 @media ($tablet-widths) {
   .download-shell {
     background-image: none;
-    padding: 20px;
-    height: 260px;
+    padding: 130px 20px 20px;
+    height: 370px;
     justify-content: center;
     align-items: start;
     position: static;
 
     &::before {
-      content: "";
-      background-image: none;
+      background-image: url("../img/iphone-hand-tablet@1x.png");
+      width: 660px;
+      height: 545px;
+      left: 50%;
+      margin-left: -330px;
     }
   }
 
@@ -56,11 +59,15 @@
 
 @media ($desktop-widths) {
   .download-shell {
-    justify-content: center;
-    height: 300px;
-    align-items: start;
-    padding: 65px 130px 0;
-    position: static;
+    height: 410px;
+    padding: 175px 130px 0;
+
+    &::before {
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+      width: 1050px;
+      height: 645px;
+      margin-left: -455px;
+    }
   }
 
   .download-shell__heading {

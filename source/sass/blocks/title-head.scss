@@ -1,7 +1,7 @@
 .title-head {
-  height: 171px;
+  height: 237px;
   box-sizing: border-box;
-  padding: 30px 20px 80px;
+  padding: 94px 20px 20px;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -27,9 +27,9 @@
 
 @media ($tablet-widths) {
   .title-head {
-    height: 330px;
+    height: 440px;
     width: 100%;
-    padding: 66px 20px;
+    padding: 176px 20px 66px;
   }
 
   .title-head__heading {
@@ -48,9 +48,9 @@
 
 @media ($desktop-widths) {
   .title-head {
-    height: 284px;
+    height: 394px;
     width: 100%;
-    padding: 57px 130px;
+    padding: 167px 130px 57px;
   }
 
   .title-head__heading {
