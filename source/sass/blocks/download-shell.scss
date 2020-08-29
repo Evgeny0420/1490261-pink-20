@@ -17,6 +17,11 @@
     height: 286px;
     bottom: 0;
     z-index: -1;
+
+    @media ($retina) {
+      background-image: url("../img/iphone-hand-mobile@2x.png");
+      background-size: 320px auto;
+    }
   }
 }
 
@@ -45,6 +50,11 @@
       height: 545px;
       left: 50%;
       margin-left: -330px;
+
+      @media ($retina) {
+        background-image: url("../img/iphone-hand-tablet@2x.png");
+        background-size: 660px auto;
+      }
     }
   }
 
@@ -67,6 +77,11 @@
       width: 1050px;
       height: 645px;
       margin-left: -455px;
+
+      @media ($retina) {
+        background-image: url("../img/iphone-hand-desktop@2x.png");
+        background-size: 1050px auto;
+      }
     }
   }
 
