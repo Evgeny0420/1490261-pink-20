@@ -169,6 +169,15 @@
     padding-top: 10px;
     text-align: start;
   }
+
+  &:hover {
+    border-color: $basic-additional-color;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $link-more-color;
+  }
 }
 
 .form__information {
@@ -200,6 +209,15 @@
   box-sizing: border-box;
   padding: 14px;
   border: none;
+
+  &:hover {
+    background-color: $form-button-hover;
+  }
+
+  &:active,
+  &:focus {
+    color: rgba($basic-color, 0.3);
+  }
 }
 
 .form__footer {
@@ -209,53 +227,82 @@
   align-items: center;
 }
 
-.form__checkbox + label::before {
-  content: "";
-  width: 35px;
-  height: 35px;
-  position: absolute;
-  left: -2px;
-  top: -2px;
-  border: 2px solid $body-color;
-  background-color: $basic-color;
-  border-radius: 3px;
+.form__checkbox + label {
+  &::before {
+    content: "";
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border: 2px solid $body-color;
+    background-color: $basic-color;
+    border-radius: 3px;
+  }
 }
 
-.form__checkbox:checked + label::after {
-  content: "";
-  position: absolute;
-  top: 9px;
-  left: 7px;
-  width: 22px;
-  height: 16px;
-  background-image: url("../img/tick.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.form__checkbox:checked + label {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 7px;
+    width: 22px;
+    height: 16px;
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
-.form__radio + label::before {
-  content: "";
-  position: absolute;
-  left: -2px;
-  top: -6px;
-  width: 37px;
-  height: 37px;
-  border: 2px solid $body-color;
-  background-color: $basic-color;
-  border-radius: 50%;
+.form__radio + label {
+  &::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -6px;
+    width: 37px;
+    height: 37px;
+    border: 2px solid $body-color;
+    background-color: $basic-color;
+    border-radius: 50%;
+  }
 }
 
-.form__radio:checked + label::after {
-  content: "";
-  position: absolute;
-  top: 7px;
-  left: 11px;
-  width: 15px;
-  height: 15px;
-  background-color: $link-more-color;
-  border-radius: 50%;
+.form__radio:checked + label {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 11px;
+    width: 15px;
+    height: 15px;
+    background-color: $link-more-color;
+    border-radius: 50%;
+  }
 }
 
+.form__radio + label,
+.form__checkbox + label {
+  &:hover {
+    &::before {
+      border-color: $basic-additional-color;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $link-more-color;
+    }
+  }
+}
+
+.form__radio:focus + label,
+.form__checkbox:focus + label {
+  &::before {
+    border-color: $link-more-color;
+  }
+}
 
 @media ($tablet-widths) {
   .form {

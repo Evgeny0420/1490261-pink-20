@@ -14,6 +14,13 @@
     column-gap: 73px;
     box-sizing: border-box;
     padding: 50px 20px;
+
+    &::before {
+      content: "";
+      width: 238px;
+      height: 276px;
+      background: url("../img/timer.svg") no-repeat;
+    }
   }
 
   .timer__item-heading {
@@ -49,13 +56,14 @@
     background-color: $basic-other-color;
   }
 
-  .timer__svg-img {
-    width: 298px;
-    height: 345px;
-  }
-
   .timer__app {
-    padding: 18px 130px 65px;
+    padding: 0 130px 67px;
+
+    &::before {
+      width: 298px;
+      height: 345px;
+      background-size: cover;
+    }
   }
 
   .timer__item-heading {

@@ -10,10 +10,6 @@
 }
 
 .footer__logotype {
-  background-image: url("../img/logo-pink-blue-mobile.svg");
-  background-repeat: no-repeat;
-  width: 145px;
-  height: 40px;
   margin: 0 auto;
 }
 
@@ -30,6 +26,10 @@
   list-style-type: none;
 }
 
+.footer__social-icon {
+  fill: $link-more-color;
+}
+
 .footer__social-link {
   width: 54px;
   height: 54px;
@@ -40,19 +40,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    border-color: $basic-additional-color;
+  }
+
+  &:active,
+  &:focus {
+    border-color: rgba($basic-additional-color, 0.1);
+
+    .footer__social-icon {
+      opacity: 0.1;
+    }
+  }
 }
 
 .footer__author {
-  &::after {
-    content: "";
-    background-image: url("../img/html-academy.svg");
-    background-repeat: no-repeat;
-    width: 27px;
-    height: 34px;
-    position: absolute;
-    top: -11px;
-    right: 0;
-  }
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -60,6 +63,25 @@
   text-decoration: none;
   position: relative;
   margin: 10px auto 0;
+}
+
+.footer__author-logo {
+  position: absolute;
+  top: -11px;
+  right: 0;
+
+  &:hover {
+    path {
+      fill: $basic-additional-color;
+    }
+  }
+
+  &:active,
+  &:focus {
+    path {
+      fill: rgba($basic-additional-color, 0.3);
+    }
+  }
 }
 
 .footer__text-link {
@@ -71,7 +93,7 @@
     height: 127px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    padding: 33px 20px 33px;
+    padding: 36px 20px 33px;
   }
 
   .footer__logotype {
@@ -87,12 +109,13 @@
   .footer__author {
     margin: 20px 42px 0;
     justify-self: end;
-
-    &::after {
-      right: -42px;
-      top: -10px;
-    }
   }
+
+  .footer__author-logo {
+    right: -42px;
+    top: -10px;
+  }
+
 
   .footer__text-link {
     margin-right: 0;
@@ -105,9 +128,7 @@
     padding: 70px 130px 65px;
   }
 
-  .footer__logotype {
-    background-image: url("../img/logo-pink-blue-desktop.svg");
-    background-repeat: no-repeat;
+  .footer__logo-icon {
     width: 147px;
   }
 
@@ -117,10 +138,10 @@
 
   .footer__author {
     margin: 18px 42px 0;
+  }
 
-    &::after {
-      top: -7px;
-    }
+  .footer__author-logo {
+    top: -7px;
   }
 
   .footer__text-link {

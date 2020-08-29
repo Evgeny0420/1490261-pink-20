@@ -21,11 +21,13 @@
   padding: 43px 0 42px 0;
 }
 
+.loading__picture {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
 .loading__photo {
-  background-image: url("../img/photo-road-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  width: 280px;
-  height: 374px;
   margin: 20px auto 0;
 }
 
@@ -33,7 +35,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 42px 69px 19px 56px;
+  padding: 42px 63px 11px 49px;
   margin: 0 auto;
 }
 
@@ -59,42 +61,72 @@
 }
 
 .loading__button-submit {
+  background-color: $basic-color;
   border: 3px solid $link-more-color;
   color: $link-more-color;
   margin-bottom: 12px;
+
+  &:hover {
+    background-color: $link-more-color;
+    color: $basic-color;
+  }
+
+  &:active,
+  &:focus {
+    color: rgba($basic-color, 0.3);
+  }
 }
 
 .loading__button-reset {
+  background-color: $basic-color;
   border: 3px solid rgba($basic-additional-color, 0.1);
   color: rgba($basic-additional-color, 0.1);
+
+  &:hover {
+    border-color: rgba($basic-additional-color, 0.3);
+    color: rgba($basic-additional-color, 0.3);
+  }
+
+  &:active,
+  &:focus {
+    border-color: rgba($basic-additional-color, 0.1);
+    background-color: rgba($basic-additional-color, 0.3);
+    color: rgba($basic-color, 0.3);
+  }
 }
 
 .loading__image-settings-crop {
   border: 0 none;
   background-color: transparent;
-  background-image: url("../img/icon-editor-crop.svg");
-  background-repeat: no-repeat;
-  width: 44px;
-  height: 44px;
+}
+
+.loading__image-svg-crop {
+  width: 48px;
+  height: 48px;
+  fill: $link-more-color;
 }
 
 .loading__image-settings-fill {
   border: 0 none;
   background-color: transparent;
-  background-image: url("../img/icon-editor-fill.svg");
-  background-repeat: no-repeat;
+}
+
+.loading__image-svg-fill {
   width: 48px;
-  height: 43px;
+  height: 48px;
+  fill: $link-more-color;
 }
 
 
 .loading__image-settings-contrast {
   border: 0 none;
   background-color: transparent;
-  background-image: url("../img/icon-editor-contrast.svg");
-  background-repeat: no-repeat;
-  width: 32px;
-  height: 32px;
+}
+
+.loading__image-svg-contrast {
+  width: 33px;
+  height: 33px;
+  fill: $link-more-color;
 }
 
 .loading__range-control {
@@ -147,16 +179,17 @@
   }
 
   .loading__photo {
-    background-image: url("../img/photo-road-tablet@1x.jpg");
-    background-repeat: no-repeat;
+    margin-top: 3px;
+  }
+
+  .loading__photo-img {
     min-width: 300px;
     height: 400px;
-    margin-top: 3px;
   }
 
   .loading__form {
     flex-direction: row;
-    padding: 54px 20px 14px;
+    padding: 53px 20px 11px;
   }
 
   .loading__settings {
@@ -166,27 +199,25 @@
 
   .loading__list {
     flex-direction: column;
-    padding: 12px 0 41px 19px;
+    padding: 10px 0 38px 19px;
     margin: 0;
   }
 
-  .loading__image-settings-crop {
-    width: 22px;
-    height: 22px;
-    background-size: contain;
-  }
-
-  .loading__image-settings-fill {
+  .loading__image-svg-crop {
     width: 24px;
-    height: 22px;
-    background-size: contain;
+    height: 24px;
   }
 
-  .loading__image-settings-contrast {
+  .loading__image-svg-fill {
+    width: 24px;
+    height: 24px;
+  }
+
+  .loading__image-svg-contrast {
     width: 16px;
     height: 16px;
-    background-size: contain;
   }
+
 
   .loading__range-control {
     width: 203px;
@@ -225,15 +256,16 @@
   }
 
   .loading__heading {
-    padding: 36px 0 70px 0;
+    padding: 37px 0 67px 0;
   }
 
   .loading__photo {
-    background-image: url("../img/photo-road-desktop@1x.jpg");
-    background-repeat: no-repeat;
+    margin: 14px 0 0 0;
+  }
+
+  .loading__photo-img {
     width: 300px;
     height: 400px;
-    margin: 14px 0 0 0;
   }
 
   .loading {
@@ -241,7 +273,7 @@
   }
 
   .loading__list {
-    padding: 12px 0 22px 42px;
+    padding: 11px 0 17px 41px;
   }
 
   .loading__buttons {
@@ -262,22 +294,19 @@
     margin-left: 44px;
   }
 
-  .loading__image-settings-crop {
-    width: 44px;
-    height: 44px;
-    background-size: contain;
-  }
-
-  .loading__image-settings-fill {
+  .loading__image-svg-crop {
     width: 48px;
-    height: 43px;
-    background-size: contain;
+    height: 48px;
   }
 
-  .loading__image-settings-contrast {
-    width: 32px;
-    height: 32px;
-    background-size: contain;
+  .loading__image-svg-fill {
+    width: 48px;
+    height: 48px;
+  }
+
+  .loading__image-svg-contrast {
+    width: 33px;
+    height: 33px;
   }
 
   .loading__range-control {
