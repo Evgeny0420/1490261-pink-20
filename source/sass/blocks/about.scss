@@ -8,6 +8,24 @@
   display: grid;
   grid-template-rows: min-content min-content;
   row-gap: 8px;
+
+  &::after {
+    content: "";
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr;
+    position: relative;
+    background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
+    width: 157px;
+    height: 277px;
+    margin: 0 auto;
+    z-index: 20;
+
+    @media ($retina) {
+      background-image: url("../img/iphone-screen-mobile@2x.png");
+      background-size: 157px auto;
+    }
+  }
 }
 
 .about__list {
@@ -37,40 +55,16 @@
   }
 }
 
-.about__images {
-  display: grid;
-  grid-auto-rows: auto;
-  grid-template-columns: 1fr;
-  margin: 0;
-
-  &::before {
-    content: "";
-    position: relative;
-    background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
-    width: 157px;
-    height: 277px;
-    margin: 0 auto;
-    z-index: 20;
-
-    @media ($retina) {
-      background-image: url("../img/iphone-screen-mobile@2x.png");
-      background-size: 157px auto;
-    }
-  }
-}
-
-
 @media ($tablet-widths) {
   .about__app {
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     column-gap: 22px;
-  }
 
-  .about__images {
-    order: 0;
-
-    &::before {
+    &::after {
+      order: -1;
+      grid-template-columns: 1fr 1fr;
+      margin: 0;
       background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat;
       width: 268px;
       height: 481px;
@@ -109,18 +103,16 @@
     grid-template-rows: 1fr 1fr;
     padding: 40px 130px 0;
     margin: 0 auto;
-  }
 
-  .about__images {
-    column-gap: 32px;
-
-    &::before {
+    &::after {
       @include about-app__mobile;
+      grid-template-columns: 1fr;
       background-image: url("../img/iphone-screen-1-desktop@1x.png"), url("../img/iphone-screen-2-desktop@1x.png"), url("../img/iphone-screen-3-desktop@1x.png");
       background-repeat: no-repeat, no-repeat, no-repeat;
       background-position: left, center, right;
       margin: 5px 2px;
       width: 100%;
+      column-gap: 32px;
 
       @media ($retina) {
         background-image: url("../img/iphone-screen-1-desktop@2x.png"), url("../img/iphone-screen-2-desktop@2x.png"), url("../img/iphone-screen-3-desktop@2x.png");
