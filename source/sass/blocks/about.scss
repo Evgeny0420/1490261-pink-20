@@ -113,18 +113,14 @@
 
   .about__mobile-smile {
     @include about-app__mobile;
-    background-image: url("../img/iphone-screen-1-desktop@1x.png"),
-    url("../img/iphone-screen-2-desktop@1x.png"),
-    url("../img/iphone-screen-3-desktop@1x.png");
+    background-image: url("../img/iphone-screen-1-desktop@1x.png"), url("../img/iphone-screen-2-desktop@1x.png"), url("../img/iphone-screen-3-desktop@1x.png");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: left, center, right;
     margin: 5px 2px;
     width: 100%;
 
     @media ($retina) {
-      background-image: url("../img/iphone-screen-1-desktop@2x.png"),
-      url("../img/iphone-screen-2-desktop@2x.png"),
-      url("../img/iphone-screen-3-desktop@2x.png");
+      background-image: url("../img/iphone-screen-1-desktop@2x.png"), url("../img/iphone-screen-2-desktop@2x.png"), url("../img/iphone-screen-3-desktop@2x.png");
       background-size: 294px auto;
     }
   }
