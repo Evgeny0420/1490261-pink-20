@@ -90,7 +90,7 @@
       height: 63px;
       width: 79px;
       top: 71px;
-      left: 561px;
+      left: 558px;
     }
   }
 
@@ -100,19 +100,33 @@
     border: 0 none;
     width: 22px;
     height: 41px;
-    background-image: url("../img/icon-review-arrow-left.svg");
-    background-repeat: no-repeat;
     position: absolute;
     top: 212px;
 
     &--past {
-      left: 129px;
+      left: 124px;
     }
 
     &--next {
-      transform: rotate(180deg);
-      right: 129px;
+      right: 136px;
     }
+
+    &:hover {
+      .review__icon-next-past {
+        fill: rgba($basic-additional-color, 0.6);
+      }
+    }
+
+    &:active,
+    &:focus {
+      .review__icon-next-past {
+        fill: rgba($basic-additional-color, 0.1);
+      }
+    }
+  }
+
+  .review__icon-next-past {
+    fill: rgba($basic-additional-color, 0.3);
   }
 
   .review__description {

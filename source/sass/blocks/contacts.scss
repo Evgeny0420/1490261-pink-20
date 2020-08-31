@@ -61,6 +61,15 @@
 
 .map {
   border: none;
+  background-color: $map-color;
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+
+  @media ($retina) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 @media ($tablet-widths) {

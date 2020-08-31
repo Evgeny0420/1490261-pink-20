@@ -85,30 +85,53 @@
 .price__icon-yes {
   position: relative;
 
+  &::before,
   &::after {
     content: "";
-    background: url("../img/icon-yes.svg") no-repeat;
-    width: 31px;
-    height: 21px;
+    height: 3px;
+    background-color: $icon-yes-color;
+    border-radius: 1.5px;
     position: absolute;
-    top: 19px;
-    right: 17px;
     z-index: 20;
+  }
+
+  &::before {
+    width: 15px;
+    top: 32.5px;
+    right: 35.5px;
+    transform: rotate(43.35deg);
+  }
+
+  &::after {
+    width: 29px;
+    top: 28px;
+    right: 14px;
+    transform: rotate(136deg);
   }
 }
 
 .price__icon-no {
   position: relative;
 
+  &::before,
   &::after {
     content: "";
-    background: url("../img/icon-no.svg") no-repeat;
-    width: 27px;
-    height: 27px;
+    background-color: $decorative-icon-color;
+    width: 37px;
+    height: 3px;
+    border-radius: 1.5px;
     position: absolute;
-    top: 16px;
-    right: 19px;
+    top: 28px;
+    right: 14px;
     z-index: 20;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 }
 
@@ -166,16 +189,22 @@
   }
 
   .price__icon-yes {
+    &::before {
+      right: 77px;
+      top: 25.5px;
+    }
+
     &::after {
-      right: 61px;
-      top: 12px;
+      right: 56px;
+      top: 21px;
     }
   }
 
   .price__icon-no {
+    &::before,
     &::after {
-      right: 63px;
-      top: 9px;
+      right: 57px;
+      top: 21px;
     }
   }
 
@@ -208,16 +237,22 @@
   }
 
   .price__icon-yes {
+    &::before {
+      right: 120px;
+      top: 33px;
+    }
+
     &::after {
       right: 99px;
-      top: 18px;
+      top: 28px;
     }
   }
 
   .price__icon-no {
+    &::before,
     &::after {
-      right: 101px;
-      top: 15px;
+      right: 99px;
+      top: 28px;
     }
   }
 
