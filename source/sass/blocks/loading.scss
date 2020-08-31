@@ -95,38 +95,54 @@
   }
 }
 
-.loading__image-settings-crop {
+.loading__image-settings {
   border: 0 none;
   background-color: transparent;
+
+  .loading__image-svg-crop,
+  .loading__image-svg-fill,
+  .loading__image-svg-contrast {
+    fill: rgba($basic-additional-color, 0.3);
+  }
+
+  &:hover {
+    .loading__image-svg-crop,
+    .loading__image-svg-fill,
+    .loading__image-svg-contrast {
+      fill: rgba($basic-additional-color, 0.5);
+    }
+  }
+
+  &--active {
+    .loading__image-svg-crop,
+    .loading__image-svg-fill,
+    .loading__image-svg-contrast {
+      fill: $link-more-color;
+    }
+
+    &:hover {
+      .loading__image-svg-crop,
+      .loading__image-svg-fill,
+      .loading__image-svg-contrast {
+        fill: $link-more-color;
+      }
+    }
+  }
 }
 
 .loading__image-svg-crop {
   width: 48px;
   height: 48px;
-  fill: $link-more-color;
-}
-
-.loading__image-settings-fill {
-  border: 0 none;
-  background-color: transparent;
 }
 
 .loading__image-svg-fill {
   width: 48px;
   height: 48px;
-  fill: $link-more-color;
-}
-
-
-.loading__image-settings-contrast {
-  border: 0 none;
-  background-color: transparent;
 }
 
 .loading__image-svg-contrast {
   width: 33px;
   height: 33px;
-  fill: $link-more-color;
 }
 
 .loading__range-control {
@@ -169,6 +185,10 @@
   border-radius: 50%;
   cursor: pointer;
   left: 80%;
+
+  &--active {
+    background-color: $link-more-color;
+  }
 }
 
 @media ($tablet-widths) {
@@ -201,6 +221,22 @@
     flex-direction: column;
     padding: 10px 0 38px 19px;
     margin: 0;
+  }
+
+  .loading__image-settings {
+    .loading__image-svg-crop,
+    .loading__image-svg-fill,
+    .loading__image-svg-contrast {
+      fill: $link-more-color;
+    }
+
+    &:hover {
+      .loading__image-svg-crop,
+      .loading__image-svg-fill,
+      .loading__image-svg-contrast {
+        fill: $link-more-color;
+      }
+    }
   }
 
   .loading__image-svg-crop {
