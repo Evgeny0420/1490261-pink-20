@@ -71,14 +71,14 @@
   right: 0;
 
   &:hover {
-    path {
+    .icon {
       fill: $basic-additional-color;
     }
   }
 
   &:active,
   &:focus {
-    path {
+    .icon {
       fill: rgba($basic-additional-color, 0.3);
     }
   }
