@@ -19,17 +19,21 @@
 }
 
 .price__item-head-line {
-  height: 96px;
+
 }
 
 .price__item-body-line {
-  height: 61px;
+
 }
 
 .price__item-head-column {
   background-color: $basic-additional-color;
   color: $basic-color;
   border: 2px solid $basic-additional-color;
+  position: relative;
+  padding: 12px 0 26px 0;
+  height: 81px;
+  box-sizing: border-box;
 
   &:nth-child(3),
   &:nth-child(2) {
@@ -41,11 +45,41 @@
     border: none;
     display: none;
   }
+
+  &--hit {
+    &::before {
+      content: "";
+      width: 74px;
+      height: 74px;
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-image: url("../img/bg-hit.svg");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "Хит";
+      width: 74px;
+      height: 74px;
+      font-size: 14px;
+      line-height: 30px;
+      font-weight: 300;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      transform: rotate(-45deg);
+      position: absolute;
+      top: -26px;
+      left: 7px;
+    }
+  }
 }
 
 .price__item-head-heading {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 26px;
   text-transform: uppercase;
   margin: 0;
 }
@@ -70,6 +104,7 @@
 .price__item-body-column {
   background-color: $basic-color;
   width: 280px;
+  height: 61px;
   padding: 0 0 0 20px;
   border: 2px solid $body-color;
   border-top: none;
@@ -171,15 +206,30 @@
   }
 
   .price__item-body-column {
+    height: 47px;
+
     &--first {
       display: table-cell;
       border-top: 2px solid $body-color;
+      padding: 0 0 0 15px;
     }
   }
 
   .price__item-head-column {
+    padding: 6px 0 0;
+    height: 77px;
+
     &--first {
       display: table-cell;
+    }
+
+    &::before {
+      background-image: url("../img/bg-hit-tablet.svg");
+    }
+
+    &::after {
+      top: -31px;
+      left: 0;
     }
   }
 
@@ -232,8 +282,28 @@
     height: 96px;
   }
 
+  .price__item-head-column {
+    padding: 0;
+
+    &::before {
+      background-image: url("../img/bg-hit.svg");
+      left: 0;
+    }
+
+    &::after {
+      top: -26px;
+      left: 9px;
+    }
+  }
+
   .price__item-body-line {
     height: 61px;
+  }
+
+  .price__item-body-column {
+    &--first {
+      padding: 0 0 0 20px;
+    }
   }
 
   .price__icon-yes {
