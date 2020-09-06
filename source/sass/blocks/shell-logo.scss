@@ -99,6 +99,16 @@
   }
 }
 
+.shell-logo__logo-icon {
+}
+
+.shell-logo__glasses,
+.shell-logo__glasses-star,
+.shell-logo__star {
+  display: none;
+  position: absolute;
+}
+
 @media ($tablet-widths) {
   .shell-logo {
     height: 110px;
