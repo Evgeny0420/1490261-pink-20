@@ -99,14 +99,9 @@
   }
 }
 
-.shell-logo__logo-icon {
-}
-
-.shell-logo__glasses,
-.shell-logo__glasses-star,
-.shell-logo__star {
+.shell-logo__logo-desktop,
+.shell-logo__logo-tablet {
   display: none;
-  position: absolute;
 }
 
 @media ($tablet-widths) {
@@ -118,9 +113,12 @@
     margin-bottom: 16px;
   }
 
-  .shell-logo__logo-icon {
-    width: 145px;
-    height: 40px;
+  .shell-logo__logo-tablet {
+    display: inline;
+  }
+
+  .shell-logo__logo-mobile {
+    display: none;
   }
 }
 
@@ -136,9 +134,12 @@
     margin-bottom: 11px;
   }
 
-  .shell-logo__logo-icon {
-    width: 147px;
-    height: 40px;
+  .shell-logo__logo-desktop {
+    display: inline;
+  }
+
+  .shell-logo__logo-tablet {
+    display: none;
   }
 
   .shell-logo__button {

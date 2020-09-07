@@ -88,6 +88,12 @@
   margin-right: 40px;
 }
 
+.footer__logo-icon {
+  &--desktop {
+    display: none;
+  }
+}
+
 @media ($tablet-widths) {
   .footer {
     height: 127px;
@@ -130,6 +136,14 @@
 
   .footer__logo-icon {
     width: 147px;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: inline;
+    }
   }
 
   .footer__social-list {

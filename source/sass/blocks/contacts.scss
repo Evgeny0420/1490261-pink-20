@@ -97,6 +97,12 @@
 
   .map {
     height: 375px;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+
+    @media ($retina) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-size: 660px auto;
+    }
   }
 }
 
@@ -132,5 +138,11 @@
 
   .map {
     height: 495px;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+
+    @media ($retina) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 }
