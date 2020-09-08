@@ -1,4 +1,61 @@
-.modal-error,
-.modal-performed {
+
+.popup {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  margin-left: -230px;
+  background-color: $basic-color;
+  box-shadow: 0 7px 15px rgba($box-shadow, 0.15);
+  border-radius: 5px;
+  box-sizing: border-box;
   display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px 65px;
+}
+
+.popup__heading {
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  width: 237px;
+  margin: 0;
+}
+
+.popup__about {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  width: 321px;
+  margin: 0;
+}
+
+.popup__button {
+  @include form-buttons;
+}
+
+
+@media ($tablet-widths) {
+  .popup {
+    &--active {
+      display: flex;
+    }
+
+    &--error {
+      width: 460px;
+      min-height: 363px;
+    }
+
+    &--performed {
+      width: 460px;
+      min-height: 432px;
+    }
+  }
 }
