@@ -1,5 +1,6 @@
 .about {
-  background-color: $basic-other-color;
+  padding-top: 38px;
+  background: linear-gradient(-6deg, $basic-other-color 96%, $basic-color 50%);
 }
 
 .about__app {
@@ -56,6 +57,11 @@
 }
 
 @media ($tablet-widths) {
+  .about {
+    padding-top: 0;
+    background: linear-gradient(-5deg, $basic-other-color 88%, $basic-color 50%);
+  }
+
   .about__app {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
@@ -98,6 +104,10 @@
 }
 
 @media ($desktop-widths) {
+  .about {
+    background: linear-gradient(-5deg, $basic-other-color 82%, $basic-color 50%);
+  }
+
   .about__app {
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr;

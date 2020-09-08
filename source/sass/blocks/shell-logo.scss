@@ -99,6 +99,20 @@
   }
 }
 
+.shell-logo__logo-mobile,
+.shell-logo__logo-desktop,
+.shell-logo__logo-tablet {
+  fill: $basic-color;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: rgba($basic-color, 0.3);
+  }
+}
+
 .shell-logo__logo-desktop,
 .shell-logo__logo-tablet {
   display: none;

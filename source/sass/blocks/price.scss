@@ -1,6 +1,6 @@
 .price {
-  background-color: $basic-other-color;
   overflow: hidden;
+  background: linear-gradient(-3deg, $basic-other-color 96%, $basic-color 50%);
 }
 
 .price__shell {
@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 93px 0 39px;
+  padding: 102px 0 39px;
 }
 
 .price__item {
@@ -177,10 +177,11 @@
 @media ($tablet-widths) {
   .price {
     overflow: auto;
+    background: linear-gradient(-3.5deg, $basic-other-color 90%, $basic-color 50%);
   }
 
   .price__shell {
-    padding: 55px 0 34px;
+    padding: 98px 0 34px;
   }
 
   .price__item {
@@ -266,6 +267,10 @@
 }
 
 @media ($desktop-widths) {
+  .price {
+    background: linear-gradient(-5deg, $basic-other-color 83%, $basic-color 50%);
+  }
+
   .price__item {
     width: 940px;
   }

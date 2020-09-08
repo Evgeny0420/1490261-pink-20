@@ -8,6 +8,7 @@
   grid-template-columns: 1fr;
   justify-items: center;
   text-align: center;
+  position: relative;
 }
 
 .contacts__heading {
@@ -20,7 +21,7 @@
 
 .contacts__list {
   padding: 0;
-  margin: 0 0 13px;
+  margin: 0 0 33px;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -59,17 +60,39 @@
   margin: 0;
 }
 
+.contacts__map {
+  position: relative;
+
+  &::before {
+    content: "";
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    position: absolute;
+    top: -1px;
+    z-index: 20;
+    background-size: 100%;
+  }
+}
+
 .map {
   border: none;
-  background-color: $map-color;
-  background-image: url("../img/bg-map-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position-x: center;
+  position: relative;
+  z-index: 1;
+}
 
-  @media ($retina) {
-    background-image: url("../img/bg-map-mobile@2x.jpg");
-    background-size: 320px auto;
-  }
+.contacts__map-picture {
+  background-color: $map-color;
+}
+
+.contacts__map-img-wrapper {
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  margin-left: -160px;
+  left: 50%;
 }
 
 @media ($tablet-widths) {
@@ -95,13 +118,27 @@
     margin: 43px 0 35px;
   }
 
+  .contacts__map {
+    &::before {
+      background-size: 106%;
+    }
+  }
+
+  .contacts__map-img-wrapper {
+    margin-left: -330px;
+  }
+
   .map {
     height: 375px;
-    background-image: url("../img/bg-map-tablet@1x.jpg");
+  }
+
+  .contacts__map-picture {
+    width: 660px;
+    height: auto;
 
     @media ($retina) {
-      background-image: url("../img/bg-map-tablet@2x.jpg");
-      background-size: 660px auto;
+      width: 660px;
+      height: 374px;
     }
   }
 }
@@ -136,13 +173,24 @@
     }
   }
 
-  .map {
-    height: 495px;
-    background-image: url("../img/bg-map-desktop@1x.jpg");
-
-    @media ($retina) {
-      background-image: url("../img/bg-map-desktop@2x.jpg");
-      background-size: 1200px auto;
+  .contacts__map {
+    &::before {
+      background-image: url("../img/triangle-white-footer-desktop.svg");
+      top: -24px;
+      background-size: 100%;
     }
+  }
+
+  .contacts__map-img-wrapper {
+    margin-left: -600px;
+  }
+
+  .map {
+    height: 502px;
+  }
+
+  .contacts__map-picture {
+    width: 1200px;
+    height: 502px;
   }
 }
