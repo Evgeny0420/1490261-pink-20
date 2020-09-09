@@ -18,14 +18,14 @@
   padding: 44px 20px 0;
   margin: 0 0 15px;
   justify-self: center;
+}
 
-  &--none {
-    display: none;
-  }
+.form__heading-br {
+  display: none;
+}
 
-  &--br {
-    display: none;
-  }
+.form__heading-none {
+  display: none;
 }
 
 .form__fieldset-shell {
@@ -112,10 +112,6 @@
 .form__name-input {
   @include name-input;
   margin: 0 0 6px 20px;
-
-  &--disabled {
-    display: none;
-  }
 }
 
 .form__name-fieldset {
@@ -127,6 +123,10 @@
 
   &--textarea {
     margin-bottom: 16px;
+  }
+
+  &--disabled {
+    display: none;
   }
 }
 
@@ -185,10 +185,10 @@
   text-transform: uppercase;
   text-align: center;
   margin: 34px 0 20px;
+}
 
-  &--none {
-    display: none;
-  }
+.form__information-none {
+  display: none;
 }
 
 .form__information-asterisk {
@@ -319,10 +319,10 @@
     width: 490px;
     padding-top: 70px;
     margin-bottom: 12px;
+  }
 
-    &--none {
-      display: inline;
-    }
+  .form__heading-none {
+    display: inline;
   }
 
   .form__fieldset-shell {
@@ -396,10 +396,6 @@
     margin-right: 20px;
     margin-bottom: 0;
 
-    &--disabled {
-      display: inline;
-    }
-
     &--contacts {
       margin-left: 20px;
       margin-right: 0;
@@ -470,6 +466,10 @@
     width: auto;
     padding: 0 30px;
     margin: 0;
+
+    &--disabled {
+      display: inline;
+    }
   }
 
   .form__write {
@@ -524,10 +524,10 @@
     width: 756px;
     padding-top: 90px;
     margin-bottom: 20px;
+  }
 
-    &--br {
-      display: block;
-    }
+  .form__heading-br {
+    display: block;
   }
 
   .form__item {
@@ -684,9 +684,7 @@
     }
   }
 
-  .form__information {
-    &--none {
-      display: inline;
-    }
+  .form__information-none {
+    display: inline;
   }
 }
