@@ -2,11 +2,12 @@
   background-color: $basic-color;
   color: $basic-additional-color;
   box-sizing: border-box;
-  padding: 40px 20px;
+  padding: 40px 20px 2px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .sentence__item {

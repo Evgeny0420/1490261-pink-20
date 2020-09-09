@@ -99,6 +99,25 @@
   }
 }
 
+.shell-logo__logo-mobile,
+.shell-logo__logo-desktop,
+.shell-logo__logo-tablet {
+  fill: $basic-color;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: rgba($basic-color, 0.3);
+  }
+}
+
+.shell-logo__logo-desktop,
+.shell-logo__logo-tablet {
+  display: none;
+}
+
 @media ($tablet-widths) {
   .shell-logo {
     height: 110px;
@@ -108,9 +127,12 @@
     margin-bottom: 16px;
   }
 
-  .shell-logo__logo-icon {
-    width: 145px;
-    height: 40px;
+  .shell-logo__logo-tablet {
+    display: inline;
+  }
+
+  .shell-logo__logo-mobile {
+    display: none;
   }
 }
 
@@ -126,9 +148,12 @@
     margin-bottom: 11px;
   }
 
-  .shell-logo__logo-icon {
-    width: 147px;
-    height: 40px;
+  .shell-logo__logo-desktop {
+    display: inline;
+  }
+
+  .shell-logo__logo-tablet {
+    display: none;
   }
 
   .shell-logo__button {

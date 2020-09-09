@@ -184,7 +184,7 @@
   @include form__heading;
   text-transform: uppercase;
   text-align: center;
-  margin: 34px 0 16px;
+  margin: 34px 0 20px;
 
   &--none {
     display: none;
@@ -515,7 +515,7 @@
   .form__shell {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 56px;
+    row-gap: 57px;
   }
 
   .form__heading {
