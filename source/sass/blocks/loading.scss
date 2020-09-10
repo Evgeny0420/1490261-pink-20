@@ -89,9 +89,9 @@
 
   &:active,
   &:focus {
-    border-color: rgba($basic-additional-color, 0.1);
-    background-color: rgba($basic-additional-color, 0.3);
-    color: rgba($basic-color, 0.3);
+    background-color: $basic-additional-color;
+    color: $basic-color;
+    opacity: 0.3;
   }
 }
 
