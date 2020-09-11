@@ -71,11 +71,11 @@
 @media ($desktop-widths) {
   .download-shell {
     height: 410px;
-    padding: 175px 130px 0;
+    padding: 175px 10px 0;
 
     &::before {
       background-image: url("../img/iphone-hand-desktop@1x.png");
-      width: 1050px;
+      width: 960px;
       height: 645px;
       margin-left: -455px;
 

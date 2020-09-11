@@ -52,24 +52,7 @@ const html = () => {
 
 exports.html = html;
 
-
-// Server
-
-const server = (done) => {
-  sync.init({
-    server: {
-      baseDir: 'build'
-    },
-    cors: true,
-    notify: false,
-    ui: false,
-  });
-  done();
-}
-
-exports.server = server;
-
-//Imagemin
+//Images
 
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
@@ -84,13 +67,13 @@ exports.images = images;
 
 //WebP
 
-const createWebp = () => {
+const Webp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("source/img"))
 }
 
-exports.webp = webp;
+exports.webp = Webp;
 
 // Sprite
 
@@ -108,7 +91,7 @@ exports.sprite = sprite;
 const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
+    "source/img/**/!(icon-*)",
     "source/js/**",
     "source/*.ico"
   ], {
@@ -127,6 +110,22 @@ const clean = () => {
 
 exports.clean = clean;
 
+// Server
+
+const server = (done) => {
+  sync.init({
+    server: {
+      baseDir: 'build'
+    },
+    cors: true,
+    notify: false,
+    ui: false,
+  });
+  done();
+}
+
+exports.server = server;
+
 // Watcher
 
 const watcher = () => {
@@ -135,7 +134,13 @@ const watcher = () => {
 }
 
 const build = gulp.series(
-  clean, copy, styles, sprite, scripts, html
+  clean,
+  images,
+  Webp,
+  sprite,
+  copy,
+  styles,
+  html
 );
 
 exports.build = build;

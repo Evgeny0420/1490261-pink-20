@@ -237,7 +237,7 @@
     grid-template-columns: min-content min-content min-content;
     column-gap: 20px;
     row-gap: 55px;
-    padding: 0 130px 0;
+    padding: 0 10px 0;
   }
 
   .photo-album__panorama {
@@ -247,11 +247,11 @@
 
   .photo-album__panorama-info {
     top: 54px;
-    right: 130px;
+    right: 10px;
   }
 
   .photo-album__panorama-photo-img {
-    width: 1200px;
+    width: 960px;
     height: 506px;
   }
 
@@ -264,7 +264,7 @@
   }
 
   .photo-album__description-panorama {
-    margin: 0 130px 50px;
+    margin: 0 10px 50px;
     padding: 23px 28px;
   }
 

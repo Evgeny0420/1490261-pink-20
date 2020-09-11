@@ -178,21 +178,21 @@
   .contacts__map {
     &::before {
       background-image: url("../img/triangle-white-footer-desktop.svg");
-      top: -24px;
+      top: -1px;
       background-size: 100%;
     }
   }
 
   .contacts__map-img-wrapper {
-    margin-left: -600px;
+    margin-left: -480px;
   }
 
   .map {
-    height: 502px;
+    height: 500px;
   }
 
   .contacts__map-picture {
-    width: 1200px;
-    height: 502px;
+    width: 960px;
+    height: 500px;
   }
 }
