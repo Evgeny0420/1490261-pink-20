@@ -44,11 +44,11 @@ const scripts = () => {
 
 exports.scripts = scripts;
 
-// HTML
+// Html
 
 const html = () => {
   return gulp.src("source/*.html")
-    .pipe(htmlmin({ collapseWhitespace: false}))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"))
     .pipe(sync.stream());
 }
@@ -138,8 +138,8 @@ const watcher = () => {
 
 const build = gulp.series(
   clean,
-  images,
   scripts,
+  images,
   Webp,
   sprite,
   html,
