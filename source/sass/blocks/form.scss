@@ -509,13 +509,13 @@
 
 @media ($desktop-widths) {
   .form {
-    padding: 0 130px;
+    padding: 0 10px;
   }
 
   .form__shell {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 57px;
+    row-gap: 56px;
   }
 
   .form__heading {
@@ -671,7 +671,7 @@
   }
 
   .form__name-fieldset {
-    padding: 0;
+    padding: 0 25px 0;
 
     &--radio {
       width: 368px;

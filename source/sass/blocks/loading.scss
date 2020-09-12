@@ -89,9 +89,9 @@
 
   &:active,
   &:focus {
-    border-color: rgba($basic-additional-color, 0.1);
-    background-color: rgba($basic-additional-color, 0.3);
-    color: rgba($basic-color, 0.3);
+    background-color: $basic-additional-color;
+    color: $basic-color;
+    opacity: 0.3;
   }
 }
 
@@ -305,7 +305,7 @@
   }
 
   .loading {
-    padding: 24px 0 27px;
+    padding: 21px 0 27px;
   }
 
   .loading__list {

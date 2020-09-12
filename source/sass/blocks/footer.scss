@@ -85,6 +85,11 @@
   margin-right: 40px;
 }
 
+.footer__glasses-stars,
+.footer__stars {
+  display: none;
+}
+
 .footer__logo-icon {
   fill: $basic-additional-color;
 
@@ -96,10 +101,6 @@
   &:focus {
     fill: $basic-additional-color;
     opacity: 0.3;
-  }
-
-  &--desktop {
-    display: none;
   }
 }
 
@@ -140,19 +141,16 @@
 @media ($desktop-widths) {
   .footer {
     height: 197px;
-    padding: 63px 130px 65px;
+    padding: 63px 10px 65px;
   }
 
-  .footer__logo-icon {
-    width: 147px;
+  .footer__glasses {
+    display: none;
+  }
 
-    &--mobile {
-      display: none;
-    }
-
-    &--desktop {
-      display: inline;
-    }
+  .footer__glasses-stars,
+  .footer__stars {
+    display: inline;
   }
 
   .footer__social-list {

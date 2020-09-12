@@ -105,13 +105,13 @@
 
 @media ($desktop-widths) {
   .about {
-    background: linear-gradient(-5deg, $basic-other-color 82%, $basic-color 50%);
+    background: linear-gradient(-5deg, $basic-other-color 82.5%, $basic-color 50%);
   }
 
   .about__app {
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr;
-    padding: 40px 130px 0;
+    padding: 40px 10px 0;
     margin: 0 auto;
 
     &::after {
