@@ -142,9 +142,9 @@ const build = gulp.series(
   scripts,
   Webp,
   sprite,
+  html,
   copy,
-  styles,
-  html
+  styles
 );
 
 exports.build = build;
