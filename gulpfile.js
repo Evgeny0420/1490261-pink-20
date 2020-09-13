@@ -12,6 +12,7 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const jsmin = require('gulp-jsmin');
+const htmlmin = require("gulp-htmlmin");
 
 // Styles
 
@@ -43,11 +44,13 @@ const scripts = () => {
 
 exports.scripts = scripts;
 
-// HTML
+// Html
 
 const html = () => {
   return gulp.src("source/*.html")
-    .pipe(gulp.dest("build"));
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"))
+    .pipe(sync.stream());
 }
 
 exports.html = html;
@@ -135,12 +138,13 @@ const watcher = () => {
 
 const build = gulp.series(
   clean,
+  scripts,
   images,
   Webp,
   sprite,
+  html,
   copy,
-  styles,
-  html
+  styles
 );
 
 exports.build = build;
