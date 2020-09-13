@@ -223,22 +223,6 @@
     margin: 0;
   }
 
-  .loading__image-settings {
-    .loading__image-svg-crop,
-    .loading__image-svg-fill,
-    .loading__image-svg-contrast {
-      fill: $link-more-color;
-    }
-
-    &:hover {
-      .loading__image-svg-crop,
-      .loading__image-svg-fill,
-      .loading__image-svg-contrast {
-        fill: $link-more-color;
-      }
-    }
-  }
-
   .loading__image-svg-crop {
     width: 24px;
     height: 24px;

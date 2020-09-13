@@ -24,8 +24,9 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(cssmin())
-    .pipe(rename("styles.min.css"))
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -150,5 +151,5 @@ const build = gulp.series(
 exports.build = build;
 
 exports.default = gulp.series(
-  styles, server, watcher
+  build, server, watcher
 );

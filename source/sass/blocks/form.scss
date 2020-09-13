@@ -141,7 +141,7 @@
 
 .form__heading-radio-check {
   &--checkbox {
-    padding-left: 56px;
+    margin-left: 56px;
   }
 
   &--radio {
@@ -228,13 +228,15 @@
 }
 
 .form__checkbox + label {
+  position: relative;
+
   &::before {
     content: "";
     width: 35px;
     height: 35px;
     position: absolute;
-    left: -2px;
-    top: -2px;
+    left: -59px;
+    top: -4px;
     border: 2px solid $body-color;
     background-color: $basic-color;
     border-radius: 3px;
@@ -246,7 +248,7 @@
     content: "";
     position: absolute;
     top: 9px;
-    left: 7px;
+    left: -50px;
     width: 22px;
     height: 16px;
     background-image: url("../img/tick.svg");
@@ -405,7 +407,7 @@
 
   .form__heading-radio-check {
     &--checkbox {
-      padding-left: 57px;
+      margin-left: 57px;
     }
 
     &--radio {
@@ -516,6 +518,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 56px;
+    padding: 0 0 3px 0;
   }
 
   .form__heading {
@@ -541,37 +544,33 @@
     }
 
     &--checkbox {
-      min-width: 260px;
-      max-width: 312px;
+      width: auto;
+      padding-left: 36px;
 
       &:first-child {
         order: 0;
-        margin-left: 58px;
       }
 
       &:nth-child(2) {
         order: 3;
-        margin-left: 58px;
       }
 
       &:nth-child(3) {
         order: 1;
-        margin-left: 55px;
+        padding-left: 46px;
       }
 
       &:nth-child(4) {
         order: 4;
-        margin-left: 55px;
+        padding-left: 46px;
       }
 
       &:nth-child(5) {
         order: 2;
-        margin-left: 35px;
       }
 
       &:nth-child(6) {
         order: 5;
-        margin-left: 35px;
       }
     }
   }
@@ -580,11 +579,13 @@
     &--contacts {
       display: flex;
       justify-content: space-around;
+      flex-wrap: wrap;
     }
 
     &--checkbox {
       grid-template-columns: 1fr 1fr 1fr;
-      padding: 0;
+      padding: 0 0 0 25px;
+      box-sizing: border-box;
     }
   }
 
@@ -633,7 +634,7 @@
     &--checkbox {
       width: 940px;
       box-sizing: border-box;
-      padding: 48px 0 63px 0;
+      padding: 48px 0 60px 0;
     }
 
     &--contacts {
